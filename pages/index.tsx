@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         console.log("FINALLY", ndef)
   
         await ndef.scan().catch((err: String) => console.log(err));
-        ndef.onreading = async ({ message }) => {
+        ndef.onreading = async ({ message }: {message: any}) => {
           if (message.records.length == 0 ||               // unformatted tag
             message.records[0].recordType == "empty") {  // empty record
             await ndef.write({
