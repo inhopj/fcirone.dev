@@ -22,6 +22,8 @@ const Link = ({
 
   const isActive = router.asPath === path
   console.log("isActive ", isActive)
+  console.log("path ", path)
+  console.log("router.asPath ", router.asPath)
   return (
     <NextLink href={path}>
       <a className={classnames(
