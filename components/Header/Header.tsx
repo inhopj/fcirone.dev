@@ -11,7 +11,7 @@ interface Props {
 const Header = ({ className: parentClassNames }: Props) => {
   const [mounted, setMounted] = useState(false)
   const { theme, resolvedTheme, setTheme } = useTheme()
-  const homePath = '/'
+  const homePath = '/#'
   const feedsPath = '/#feeds'
 
   // When mounted on client, now we can show the UI

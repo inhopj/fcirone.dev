@@ -21,9 +21,9 @@ const Link = ({
   // useEffect(() => setIsActive(router.asPath === path), [router.asPath, path])
 
   const isActive = router.asPath === path
-  console.log("isActive ", isActive)
   console.log("path ", path)
   console.log("router.asPath ", router.asPath)
+  console.log("isActive ", isActive)
   return (
     <NextLink href={path}>
       <a className={classnames(
