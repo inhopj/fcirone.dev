@@ -16,9 +16,11 @@ const Link = ({
 }: Props) => {
   
   const router = useRouter();
-  let [isActive, setIsActive] = useState(false)
+  // let [isActive, setIsActive] = useState(false)
 
-  useEffect(() => setIsActive(router.asPath === path), [router.asPath, path])
+  // useEffect(() => setIsActive(router.asPath === path), [router.asPath, path])
+
+  const isActive = router.asPath === path
   return (
     <NextLink href={path}>
       <a className={classnames(
