@@ -1,6 +1,7 @@
 import NextLink from 'next/link'
 import classnames from 'classnames'
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 interface Props {
   className?: string;
@@ -15,7 +16,9 @@ const Link = ({
 }: Props) => {
   
   const router = useRouter();
-  const isActive = router.asPath === path
+  let [isActive, setIsActive] = useState(false)
+
+  useEffect(() => setIsActive(router.asPath === path), [router.asPath, path])
   return (
     <NextLink href={path}>
       <a className={classnames(
