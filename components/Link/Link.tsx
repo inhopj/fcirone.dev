@@ -31,7 +31,7 @@ const Link = ({
         isActive
           ? 'font-semibold text-zinc-800 dark:text-zinc-200'
           : 'font-normal text-zinc-600 dark:text-zinc-400',
-        'rounded-lg cursor-pointer hover:bg-zinc-300 dark:hover:bg-zinc-600 p-3 text-gray-600 dark:text-gray-400'
+        'rounded-lg cursor-pointer hover:bg-zinc-300 dark:hover:bg-zinc-800 p-3 text-gray-600 dark:text-gray-400'
       )}>
         {title}
       </a>
