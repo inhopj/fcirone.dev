@@ -24,11 +24,12 @@ const Home: NextPage<Props> = ({ feeds, timestamp }) => {
         bg-white
         dark:bg-zinc-900'
       >
-        <Header className="pb-6" />
-        <Hero className="pb-6" />
+        <Header className='mb-6' />
+        <Hero className='mb-6' />
+        
         {feeds &&
           <Feeds
-            className="pb-6"
+            className=''
             items={feeds} />
         }
         <div>
