@@ -12,26 +12,45 @@ const Hero = ({ className: parentClassNames }: Props) => {
   return (
     <div
       className={classnames(
-        'flex flex-col-reverse justify-between items-start md:items-center md:flex-row max-w-2xl w-full ',
+        'flex flex-col-reverse justify-between items-start md:items-center md:flex-row max-w-2xl w-full',
         parentClassNames
       )}
     >
       <div className='flex flex-col justify-start p-3'>
-        <h1 className="text-3xl md:text-5xl text-black dark:text-white">
-          Fra Cirone
+        <h1 className="text-3xl md:text-5xl text-black dark:text-white pb-2">
+          Francesco Cirone
         </h1>
-        <h2>
-          Software Developer
+        <h2 className='text-zinc-600 dark:text-zinc-400 pb-4'>
+          Fan of Node, React and everything js-related
         </h2>
+        <h2 className='text-zinc-600 dark:text-zinc-400 pb-4'>
+          <p>
+            Worked at
+            <span
+              className='inline-flex items-center align-bottom pl-2'
+            >
+              <Image src="/comcast-logo.svg" alt="Vercel" width={20} height={20}/>
+              <a
+                href="https://corporate.comcast.com/company/xfinity/internet/xfi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='pl-1 cursor-pointer'
+              >
+                Comcast
+              </a>
+            </span>
+            , Toshiba and Tim
+          </p>
+        </h2>
+
       </div>
-      <div className='flex md:pl-3 p-0'>
+      <div className='flex md:pl-3 p-0 self-start'>
         <Image
           src={profilePic}
           height={125}
           width={125}
           alt="profile image"
           className=''
-          // layout='fill'
         />
       </div>
 
