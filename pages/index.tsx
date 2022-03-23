@@ -20,7 +20,7 @@ const Home: NextPage<Props> = ({ feeds, timestamp }) => {
       </Head>
 
       {/* CONTAINER */}
-      <div className='flex flex-col min-h-screen justify-start items-center p-8
+      <div className='flex flex-col min-h-screen justify-start items-center p-4 md:p-8
         bg-white
         dark:bg-zinc-900'
       >
