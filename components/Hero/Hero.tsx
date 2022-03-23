@@ -24,7 +24,7 @@ const Hero = ({ className: parentClassNames }: Props) => {
           Software Developer
         </h2>
       </div>
-      <div className='flex pl-3 md:p-0'>
+      <div className='flex md:pl-3 p-0'>
         <Image
           src={profilePic}
           height={125}
