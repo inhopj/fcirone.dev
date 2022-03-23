@@ -6,12 +6,11 @@ import Feeds, { Feed } from '../components/Feeds/Feeds'
 import Head from 'next/head'
 
 interface Props {
-  feeds: Feed[],
+  feeds?: Feed[],
   timestamp: Date
 }
 
 const Home: NextPage<Props> = ({ feeds, timestamp }) => {
-  console.log(feeds)
   return (
     <>
       <Head>
@@ -26,8 +25,12 @@ const Home: NextPage<Props> = ({ feeds, timestamp }) => {
         dark:bg-zinc-900'
       >
         <Header className="pb-6" />
-        <Hero />
-        {feeds && <Feeds items={feeds} />}
+        <Hero className="pb-6" />
+        {feeds &&
+          <Feeds
+            className="pb-6"
+            items={feeds} />
+        }
         <div>
           {timestamp}
         </div>
@@ -39,18 +42,18 @@ const Home: NextPage<Props> = ({ feeds, timestamp }) => {
 }
 
 const loadFeeds = async () => {
-  
+
   try {
     //EchoJs RSS feee url TODO - move in constants file
     const RSS_URL = 'https://www.echojs.com/rss'
-    
+
     let parser = new Parser();
-    
+
     const feeds = await parser.parseURL(RSS_URL)
-    
+
     console.log('fdhntrhynf --------- ', feeds)
     console.log('fdhntrhynf --------- ', feeds.items.length)
-    
+
     return feeds
 
   } catch (error) {

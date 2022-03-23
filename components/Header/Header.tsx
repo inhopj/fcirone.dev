@@ -32,7 +32,7 @@ const Header = ({ className: parentClassNames }: Props) => {
       imgSrc = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
       break
   }
-
+  console.log("MATCHES?? ", router.asPath === homePath)
   return (
     <div
       className={classnames(
