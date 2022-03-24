@@ -17,7 +17,6 @@ const Feeds = ({
   items
 }: Props) => {
 
-  const fiveRandomItems = items.sort(() => .5 - Math.random()).slice(0, 5)
   return (
     <div
       className={classnames(
@@ -28,7 +27,7 @@ const Feeds = ({
       <h1 id="feeds" className="text-2xl md:text-4xl text-black dark:text-white mb-3">
         Feeds
       </h1>
-      {fiveRandomItems.map((item, index) => {
+      {items.map((item, index) => {
         const last = index === items.length - 1
         const subtitle = `at ${item.guid.split('https://')[1].split('/')[0]}`
         return (

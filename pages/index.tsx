@@ -11,6 +11,7 @@ interface Props {
 }
 
 const Home: NextPage<Props> = ({ feeds, timestamp }) => {
+  const fiveRandomFeeds = feeds?.sort(() => .5 - Math.random()).slice(0, 5)
   return (
     <>
       <Head>
@@ -27,10 +28,10 @@ const Home: NextPage<Props> = ({ feeds, timestamp }) => {
         <Header className='mb-6' />
         <Hero className='mb-6' />
         
-        {feeds &&
+        {fiveRandomFeeds &&
           <Feeds
             className=''
-            items={feeds} />
+            items={fiveRandomFeeds} />
         }
         <div>
           {timestamp}
