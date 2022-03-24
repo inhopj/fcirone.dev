@@ -20,7 +20,7 @@ const Feeds = ({
   return (
     <div
       className={classnames(
-        'flex flex-col max-w-2xl w-full pl-3',
+        'flex flex-col max-w-2xl w-full md:pl-3',
         parentClassNames
       )}
     >

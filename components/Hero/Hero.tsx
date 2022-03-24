@@ -16,7 +16,7 @@ const Hero = ({ className: parentClassNames }: Props) => {
         parentClassNames
       )}
     >
-      <div className='flex flex-col justify-start p-3'>
+      <div className='flex flex-col justify-start p-0 md:p-3'>
         <h1 className="text-3xl md:text-5xl text-black dark:text-white pb-2">
           Francesco Cirone
         </h1>
@@ -29,7 +29,7 @@ const Hero = ({ className: parentClassNames }: Props) => {
             <span
               className='inline-flex items-center align-bottom pl-2'
             >
-              <Image src="/comcast-logo.svg" alt="Vercel" width={20} height={20}/>
+              <Image src="/comcast-logo.svg" alt="Comcast" width={20} height={20}/>
               <a
                 href="https://corporate.comcast.com/company/xfinity/internet/xfi"
                 target="_blank"
@@ -44,11 +44,11 @@ const Hero = ({ className: parentClassNames }: Props) => {
         </h2>
 
       </div>
-      <div className='flex md:pl-3 p-0 self-start'>
+      <div className='flex self-start'>
         <Image
           src={profilePic}
-          height={125}
-          width={125}
+          height={120}
+          width={120}
           alt="profile image"
           className=''
         />
