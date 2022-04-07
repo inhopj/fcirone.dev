@@ -17,6 +17,13 @@ const Feeds = ({
   items
 }: Props) => {
 
+  const sevenRandomFeeds = items?.sort(() => .5 - Math.random()).slice(0, 10)
+  console.log(sevenRandomFeeds)
+
+  const getSubtitle = (url: string) => {
+    return new URL(url).origin.split('://')[1]
+  }
+
   return (
     <div
       className={classnames(
@@ -27,21 +34,28 @@ const Feeds = ({
       <h1 id="feeds" className="text-2xl md:text-4xl text-black dark:text-white mb-3">
         Feeds
       </h1>
-      {items.map((item, index) => {
+      {sevenRandomFeeds.map((item, index) => {
         const last = index === items.length - 1
-        const subtitle = `at ${item.guid.split('https://')[1].split('/')[0]}`
+        const subtitle = item.guid ? `at ${getSubtitle(item.guid)}` : ''
         return (
-          <Card
+          // eslint-disable-next-line react/jsx-no-target-blank
+          <a
             key={index}
-            className={classnames(
-              'text-zinc-600 dark:text-zinc-400',
-              {
-                'mb-3': !last
-              },
-            )}
-            title={item.title}
-            subtitle={subtitle}
-          />
+            href={item.guid || ''}
+            target='_blank'
+          >
+
+            <Card
+              className={classnames(
+                'text-zinc-600 dark:text-zinc-400',
+                {
+                  'mb-3': !last
+                },
+              )}
+              title={item.title}
+              subtitle={subtitle}
+            />
+          </a>
         )
       })}
     </div>

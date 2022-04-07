@@ -2,7 +2,7 @@ import Image from 'next/image'
 import classnames from 'classnames'
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import Link from '../Link/Link';
+import Anchor from '../Link/Anchor';
 
 interface Props {
   className?: string;
@@ -38,15 +38,25 @@ const Header = ({ className: parentClassNames }: Props) => {
       )}
     >
       <div className="flex justify-start">
-        <Link
+        <Anchor
           path={homePath}
           title="Home"
         />
-        <Link
+        <Anchor
           path={feedsPath}
           title="Feeds"
         />
-
+        {/* <a
+          href={feedsPath}
+          className={classnames(
+            parentClassNames,
+            true
+              ? 'font-semibold text-zinc-800 dark:text-zinc-200'
+              : 'font-normal text-zinc-600 dark:text-zinc-400',
+            'rounded-lg cursor-pointer hover:bg-zinc-300 dark:hover:bg-zinc-800 p-3 text-gray-600 dark:text-gray-400'
+          )}>
+          Feeds
+        </a> */}
       </div>
       {mounted && <button
         className="bg-zinc-200 dark:bg-zinc-800 p-3 rounded-lg cursor-pointer"

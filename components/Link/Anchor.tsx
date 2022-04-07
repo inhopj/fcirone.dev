@@ -9,34 +9,32 @@ interface Props {
   path: string;
 }
 
-const Link = ({
+const Anchor = ({
   className: parentClassNames,
   title,
   path
 }: Props) => {
-  
+
   const router = useRouter();
   // let [isActive, setIsActive] = useState(false)
 
   // useEffect(() => setIsActive(router.asPath === path), [router.asPath, path])
 
   const isActive = router.asPath === path
-  console.log("path ", path)
-  console.log("router.asPath ", router.asPath)
-  console.log("isActive ", isActive)
   return (
-    <NextLink href={path}>
-      <a className={classnames(
+    // eslint-disable-next-line @next/next/no-html-link-for-pages
+    <a
+      href={path}
+      className={classnames(
         parentClassNames,
         isActive
           ? 'font-semibold text-zinc-800 dark:text-zinc-200'
           : 'font-normal text-zinc-600 dark:text-zinc-400',
         'rounded-lg cursor-pointer hover:bg-zinc-300 dark:hover:bg-zinc-800 p-3 text-gray-600 dark:text-gray-400'
       )}>
-        {title}
-      </a>
-    </NextLink>
+      {title}
+    </a>
   )
 }
 
-export default Link
+export default Anchor
