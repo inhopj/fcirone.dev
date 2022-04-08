@@ -16,7 +16,14 @@ const Header = ({ className: parentClassNames }: Props) => {
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), [])
+
+  const handleClick = () => {
+    toggle(resolvedTheme as string)
+  }
+  const toggle = (value: string) => value === 'light' ? setTheme('dark') : setTheme('light')
+  
   let imgSrc
+  console.log("Resolved theme ", resolvedTheme)
 
   switch (resolvedTheme) {
     case 'light':
@@ -61,12 +68,7 @@ const Header = ({ className: parentClassNames }: Props) => {
       </div>
       {mounted && <button
         className="bg-zinc-200 dark:bg-zinc-800 p-3 rounded-lg cursor-pointer"
-        onClick={() => {
-          console.log("dentro onclick")
-          console.log("theme ", theme)
-          console.log("resolvedTheme ", resolvedTheme)
-          theme == 'light' ? setTheme('dark') : setTheme('light')
-        }}
+        onClick={handleClick}
       >
         <Image src={imgSrc} alt="toggle-theme-img" width={25} height={25} />
       </button>}
