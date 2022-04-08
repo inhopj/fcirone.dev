@@ -41,6 +41,7 @@ const Header = ({ className: parentClassNames }: Props) => {
         <Anchor
           path={homePath}
           title="Home"
+          className='pl-0 md:pl-3'
         />
         <Anchor
           path={feedsPath}
@@ -61,6 +62,9 @@ const Header = ({ className: parentClassNames }: Props) => {
       {mounted && <button
         className="bg-zinc-200 dark:bg-zinc-800 p-3 rounded-lg cursor-pointer"
         onClick={() => {
+          console.log("dentro onclick")
+          console.log("theme ", theme)
+          console.log("resolvedTheme ", resolvedTheme)
           theme == 'light' ? setTheme('dark') : setTheme('light')
         }}
       >
