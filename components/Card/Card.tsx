@@ -6,16 +6,21 @@ export interface Props {
   elevate?: boolean;
   title?: string;
   subtitle?: string;
+  href?: string;
 }
 
 const Card = ({
   className: parentClassNames,
   elevate,
   title,
-  subtitle
+  subtitle,
+  href
 }: Props) => {
   return (
-    <div
+    // eslint-disable-next-line react/jsx-no-target-blank
+    <a
+      href={href}
+      target='_blank'
       className={classnames(
         parentClassNames,
         'bg-zinc-200 dark:bg-zinc-800 rounded-lg p-3',
@@ -34,7 +39,7 @@ const Card = ({
       >
         {subtitle}
       </p>
-    </div>
+    </a>
   );
 };
 
