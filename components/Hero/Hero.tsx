@@ -47,8 +47,8 @@ const Hero = ({ className: parentClassNames }: Props) => {
       <div className='flex self-start mb-4 md:mb-0 '>
         <Image
           src={profilePic}
-          height={120}
-          width={120}
+          height={100}
+          width={100}
           alt="profile image"
           className=''
         />
