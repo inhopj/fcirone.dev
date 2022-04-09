@@ -1,4 +1,5 @@
 import classnames from 'classnames'
+import { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 
 
@@ -17,38 +18,42 @@ const Feeds = ({
   items
 }: Props) => {
 
-  // console.log("ITEMS ", items)
-  
-  const tenRandomFeeds = items?.sort(() => 0.5 - Math.random()).slice(0, 10)
-  console.log("HERE ", tenRandomFeeds)
-  
+  const [tenRandom, setTenRandom] = useState<Feed[]>([])
+  useEffect(() => {
+
+    const tenRandomFeeds: Feed[] = items?.sort(() => 0.5 - Math.random()).slice(0, 10)
+    console.log("tenRandomFeeds ", tenRandomFeeds)
+    setTenRandom(tenRandomFeeds)
+  }, [items]
+  )
+
   const getSubtitle = (url: string) => {
     return new URL(url).origin.split('://')[1]
   }
-  
+
   return (
     <div
-    className={classnames(
-      'flex flex-col max-w-2xl w-full md:pl-3',
-      parentClassNames
+      className={classnames(
+        'flex flex-col max-w-2xl w-full md:pl-3',
+        parentClassNames
       )}
-      >
+    >
       <h1 id="feeds" className="text-2xl md:text-4xl text-black dark:text-white mb-3">
         Feeds
       </h1>
-      {tenRandomFeeds.map((item, index) => {
-        const last = index === tenRandomFeeds.length - 1
+      {tenRandom.map((item, index) => {
+        const last = index === tenRandom.length - 1
         const subtitle = item.guid ? `at ${getSubtitle(item.guid)}` : ''
         console.log("ITEM ", item)
         return (
           // eslint-disable-next-line react/jsx-no-target-blank
-          // <a
-          //   key={index}
-          //   href={item.guid}
-          //   target='_blank'
-          // >
+          <a
+            key={index}
+            href={item.guid}
+            target='_blank'
+          >
             <Card
-              key={item.guid}
+              key={index}
               className={classnames(
                 'text-zinc-600 dark:text-zinc-400',
                 {
@@ -59,7 +64,7 @@ const Feeds = ({
               subtitle={subtitle}
               href={item.guid}
             />
-          // </a>
+          </a>
         )
       })}
     </div>

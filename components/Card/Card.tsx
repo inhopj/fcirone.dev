@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import classnames from 'classnames';
 
 export interface Props {
@@ -14,15 +14,10 @@ const Card = ({
   elevate,
   title,
   subtitle,
-  href
 }: Props) => {
-  const [path, setPath] = useState('')
-  useEffect(() => {setPath(href as string)}, [href])
+  
   return (
-    // eslint-disable-next-line react/jsx-no-target-blank
-    <a
-      href={path}
-      target='_blank'
+    <div
       className={classnames(
         parentClassNames,
         'bg-zinc-200 dark:bg-zinc-800 rounded-lg p-3',
@@ -41,7 +36,7 @@ const Card = ({
       >
         {subtitle}
       </p>
-    </a>
+    </div>
   );
 };
 
