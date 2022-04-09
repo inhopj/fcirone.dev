@@ -25,7 +25,7 @@ const Home: NextPage<Props> = ({ feeds, timestamp }) => {
         bg-white
         dark:bg-zinc-900'
       >
-        <Header className='mb-6' />
+        <Header className='mb-7' />
         <Hero className='mb-6' />
         
         {feeds &&
@@ -72,7 +72,7 @@ export const getStaticProps: GetStaticProps = async () => {
   // Props returned will be passed to the page component
   return {
     props: { feeds, timestamp },
-    revalidate: 60,
+    revalidate: 3600,
   }
 }
 
