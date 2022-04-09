@@ -17,26 +17,29 @@ const Feeds = ({
   items
 }: Props) => {
 
-  const sevenRandomFeeds = items?.sort(() => .5 - Math.random()).slice(0, 10)
-  console.log(sevenRandomFeeds)
-
+  // console.log("ITEMS ", items)
+  
+  const sevenRandomFeeds = items?.sort(() => 0.5 - Math.random()).slice(0, 10)
+  console.log("HERE ", sevenRandomFeeds)
+  
   const getSubtitle = (url: string) => {
     return new URL(url).origin.split('://')[1]
   }
-
+  
   return (
     <div
-      className={classnames(
-        'flex flex-col max-w-2xl w-full md:pl-3',
-        parentClassNames
+    className={classnames(
+      'flex flex-col max-w-2xl w-full md:pl-3',
+      parentClassNames
       )}
-    >
+      >
       <h1 id="feeds" className="text-2xl md:text-4xl text-black dark:text-white mb-3">
         Feeds
       </h1>
       {sevenRandomFeeds.map((item, index) => {
         const last = index === items.length - 1
         const subtitle = item.guid ? `at ${getSubtitle(item.guid)}` : ''
+        console.log("ITEM ", item)
         return (
           // eslint-disable-next-line react/jsx-no-target-blank
           <a

@@ -53,10 +53,9 @@ const loadFeeds = async () => {
 
     const feeds = await parser.parseURL(RSS_URL)
 
-    console.log('fdhntrhynf --------- ', feeds)
-    console.log('fdhntrhynf --------- ', feeds.items.length)
+    console.log('ITEMS ---- ', feeds.items)
 
-    return feeds
+    return feeds.items
 
   } catch (error) {
     console.log(error)
@@ -66,7 +65,7 @@ const loadFeeds = async () => {
 // // This function runs only on the server side
 export const getStaticProps: GetStaticProps = async () => {
   // Instead of fetching your `/api` route you can call the same function directly in `getStaticProps`
-  const feeds = (await loadFeeds())?.items
+  const feeds = await loadFeeds()
   const timestamp = Date.now()
 
   // Props returned will be passed to the page component
