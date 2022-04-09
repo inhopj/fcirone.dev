@@ -71,7 +71,7 @@ export const getStaticProps: GetStaticProps = async () => {
   // Props returned will be passed to the page component
   return {
     props: { feeds, timestamp },
-    // revalidate: 3600,
+    revalidate: 60,
   }
 }
 
