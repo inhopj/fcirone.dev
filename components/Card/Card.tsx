@@ -4,6 +4,7 @@ import classnames from 'classnames';
 export interface Props {
   className?: string;
   elevate?: boolean;
+  centerText?: boolean;
   title?: string;
   subtitle?: string;
   href?: string;
@@ -12,27 +13,38 @@ export interface Props {
 const Card = ({
   className: parentClassNames,
   elevate,
+  centerText = false,
   title,
   subtitle,
 }: Props) => {
-  
+
   return (
     <div
       className={classnames(
-        parentClassNames,
         'bg-zinc-200 dark:bg-zinc-800 rounded-lg p-3',
         {
-          'shadow rounded-small': elevate,
-        }
+          'shadow rounded-small': elevate
+        },
+        parentClassNames
       )}
     >
       <p
-        className="text-base md:text-lg text-black dark:text-white"
+        className={classnames(
+          "text-base md:text-lg text-black dark:text-white",
+          {
+            'text-center': centerText
+          },
+        )}
       >
         {title}
       </p>
       <p
-        className="text-xs md:text-sm text-zinc-500"
+        className={classnames(
+          "text-xs md:text-sm text-zinc-500",
+          {
+            'text-center': centerText
+          }
+        )}
       >
         {subtitle}
       </p>
