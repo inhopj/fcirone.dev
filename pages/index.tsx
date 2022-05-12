@@ -18,11 +18,10 @@ const Hero = dynamic(
 )
 
 interface Props {
-  feeds: Feed[],
-  timestamp: Date
+  feeds: Feed[]
 }
 
-const Home: NextPage<Props> = ({ feeds, timestamp }) => {
+const Home: NextPage<Props> = ({ feeds }) => {
 
   return (
     <>
