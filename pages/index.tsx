@@ -1,17 +1,34 @@
 import type { GetStaticProps, NextPage } from 'next'
 import Parser from 'rss-parser'
-import Header from '../components/Header/Header'
-import Hero from '../components/Hero/Hero'
-import Feeds, { Feed } from '../components/Feeds/Feeds'
+// import Header from '../components/Header/Header'
+// import Hero from '../components/Hero/Hero'
+import { Feed } from '../components/Feeds/Feeds'
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
+import classnames from 'classnames'
+import Card from '../components/Card/Card'
+
+const Feeds = dynamic(
+  () => import('../components/Feeds/Feeds'),
+  { ssr: false }
+)
+const Header = dynamic(
+  () => import('../components/Header/Header'),
+  { ssr: false }
+)
+const Hero = dynamic(
+  () => import('../components/Hero/Hero'),
+  { ssr: false }
+)
 
 interface Props {
-  feeds?: Feed[],
+  feeds: Feed[],
   timestamp: Date
 }
 
 const Home: NextPage<Props> = ({ feeds, timestamp }) => {
-  
+
+
   return (
     <>
       <Head>
@@ -27,15 +44,11 @@ const Home: NextPage<Props> = ({ feeds, timestamp }) => {
       >
         <Header className='mb-7' />
         <Hero className='mb-6' />
-        
-        {feeds &&
-          <Feeds
-            className=''
-            items={feeds} />
-        }
-        <div>
-          {timestamp}
-        </div>
+        <Feeds
+          className=''
+          items={feeds}
+        />
+
       </div>
 
 
@@ -43,10 +56,10 @@ const Home: NextPage<Props> = ({ feeds, timestamp }) => {
   )
 }
 
-const loadFeeds = async () => {
+const loadFeeds = async (): Promise<Feed[]> => {
 
   try {
-    //EchoJs RSS feee url TODO - move in constants file
+    //EchoJs RSS feed url TODO - move in constants file
     const RSS_URL = 'https://www.echojs.com/rss'
 
     let parser = new Parser();
@@ -54,11 +67,11 @@ const loadFeeds = async () => {
     const feeds = await parser.parseURL(RSS_URL)
 
     console.log('ITEMS ---- ', feeds.items)
-
-    return feeds.items
+    return feeds.items as Feed[]
 
   } catch (error) {
     console.log(error)
+    return [] as Feed[]
   }
 }
 
