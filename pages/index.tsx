@@ -1,12 +1,8 @@
 import type { GetStaticProps, NextPage } from 'next'
 import Parser from 'rss-parser'
-// import Header from '../components/Header/Header'
-// import Hero from '../components/Hero/Hero'
 import { Feed } from '../components/Feeds/Feeds'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import classnames from 'classnames'
-import Card from '../components/Card/Card'
 
 const Feeds = dynamic(
   () => import('../components/Feeds/Feeds'),
@@ -28,7 +24,6 @@ interface Props {
 
 const Home: NextPage<Props> = ({ feeds, timestamp }) => {
 
-
   return (
     <>
       <Head>
@@ -48,10 +43,7 @@ const Home: NextPage<Props> = ({ feeds, timestamp }) => {
           className=''
           items={feeds}
         />
-
       </div>
-
-
     </>
   )
 }
@@ -66,7 +58,6 @@ const loadFeeds = async (): Promise<Feed[]> => {
 
     const feeds = await parser.parseURL(RSS_URL)
 
-    console.log('ITEMS ---- ', feeds.items)
     return feeds.items as Feed[]
 
   } catch (error) {
@@ -75,15 +66,14 @@ const loadFeeds = async (): Promise<Feed[]> => {
   }
 }
 
-// // This function runs only on the server side
+// Runs only on the server side
 export const getStaticProps: GetStaticProps = async () => {
   // Instead of fetching your `/api` route you can call the same function directly in `getStaticProps`
   const feeds = await loadFeeds()
-  const timestamp = Date.now()
 
   // Props returned will be passed to the page component
   return {
-    props: { feeds, timestamp },
+    props: { feeds },
     revalidate: 60,
   }
 }
