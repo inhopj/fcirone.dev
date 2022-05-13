@@ -1,7 +1,5 @@
-import NextLink from 'next/link'
 import classnames from 'classnames'
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
 
 interface Props {
   className?: string;
@@ -16,11 +14,9 @@ const Anchor = ({
 }: Props) => {
 
   const router = useRouter();
-  // let [isActive, setIsActive] = useState(false)
-
-  // useEffect(() => setIsActive(router.asPath === path), [router.asPath, path])
-
+  
   const isActive = router.asPath === path
+
   return (
     // eslint-disable-next-line @next/next/no-html-link-for-pages
     <a
