@@ -14,6 +14,7 @@ const Header = ({ className: parentClassNames }: Props) => {
   const homePath = '/#'
   const feedsPath = '/#feeds'
 
+  // TODO - Test and remove mounted-logic since I'm now using dynamic import
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), [])
 
