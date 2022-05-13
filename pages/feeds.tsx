@@ -1,28 +1,29 @@
-import type { GetStaticProps, NextPage } from 'next'
-import Parser from 'rss-parser'
-import { Feed } from '../components/Feeds/Feeds'
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+// import Section from '../components/Feeds/Section'
+// import Header from '../components/Header/Header'
+import feeds from '../public/feeds.json'
 
-const Feeds = dynamic(
-  () => import('../components/Feeds/Feeds'),
-  { ssr: false }
-)
 const Header = dynamic(
   () => import('../components/Header/Header'),
   { ssr: false }
 )
-interface Props {
-  feeds: Feed[]
-}
+const Section = dynamic(
+  () => import('../components/Feeds/Section'),
+  { ssr: false }
+)
 
-const Home: NextPage<Props> = ({ feeds }) => {
+// TODO - cleanup
+const Feeds: NextPage = () => {
+
+  const { javascript, node, react } = feeds
 
   return (
     <>
       <Head>
         <title>Personal Web Page</title>
-        <meta name="description" content="My personal web page" charSet="UTF-8" />
+        <meta name="description" content="xFeeds page" charSet="UTF-8" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -32,43 +33,23 @@ const Home: NextPage<Props> = ({ feeds }) => {
         dark:bg-zinc-900'
       >
         <Header className='mb-7' />
-        <Feeds
-          className=''
-          items={feeds}
+        <Section
+          title='Javascript'
+          items={javascript}
+        />
+        <br></br>
+        <Section
+          title='Node'
+          items={node}
+        />
+        <br></br>
+        <Section
+          title='React'
+          items={react}
         />
       </div>
     </>
   )
 }
 
-const loadFeeds = async (): Promise<Feed[]> => {
-
-  try {
-    //EchoJs RSS feed url TODO - move in constants file
-    const RSS_URL = 'https://www.echojs.com/rss'
-
-    let parser = new Parser();
-
-    const feeds = await parser.parseURL(RSS_URL)
-
-    return feeds.items as Feed[]
-
-  } catch (error) {
-    console.log(error)
-    return [] as Feed[]
-  }
-}
-
-// Runs only on the server side
-export const getStaticProps: GetStaticProps = async () => {
-  // Instead of fetching your `/api` route you can call the same function directly in `getStaticProps`
-  const feeds = await loadFeeds()
-
-  // Props returned will be passed to the page component
-  return {
-    props: { feeds },
-    revalidate: 60,
-  }
-}
-
-export default Home
+export default Feeds
