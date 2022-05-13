@@ -11,8 +11,8 @@ interface Props {
 const Header = ({ className: parentClassNames }: Props) => {
   const [mounted, setMounted] = useState(false)
   const { theme, resolvedTheme, setTheme } = useTheme()
-  const homePath = '/#'
-  const feedsPath = '/#feeds'
+  const homePath = '/'
+  const feedsPath = '/feeds'
 
   // TODO - Test and remove mounted-logic since I'm now using dynamic import
   // When mounted on client, now we can show the UI
