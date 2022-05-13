@@ -30,6 +30,7 @@ const Hero = ({ className: parentClassNames }: Props) => {
               className='inline-flex items-center align-bottom pl-2'
             >
               <Image src="/comcast-logo.svg" alt="Comcast" width={20} height={20}/>
+              {/* TODO - Add over effect */}
               <a
                 href="https://corporate.comcast.com/company/xfinity/internet/xfi"
                 target="_blank"
@@ -39,12 +40,14 @@ const Hero = ({ className: parentClassNames }: Props) => {
                 Comcast
               </a>
             </span>
+            {/* TODO - Add icon and link */}
             , Toshiba and Tim
           </p>
         </h2>
 
       </div>
       <div className='flex self-start mb-4 md:mb-0 '>
+        {/* TODO - Refine SVG per evitare contorno sottile giallino in dark mode */}
         <Image
           src={profilePic}
           height={100}
