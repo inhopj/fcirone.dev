@@ -3,7 +3,6 @@ import classnames from 'classnames';
 
 export interface Props {
   className?: string;
-  elevate?: boolean;
   centerText?: boolean;
   title?: string;
   subtitle?: string;
@@ -12,7 +11,6 @@ export interface Props {
 
 const Card = ({
   className: parentClassNames,
-  elevate,
   centerText = false,
   title,
   subtitle,
@@ -22,9 +20,6 @@ const Card = ({
     <div
       className={classnames(
         'bg-zinc-200 dark:bg-zinc-800 rounded-lg p-3',
-        {
-          'shadow rounded-small': elevate
-        },
         parentClassNames
       )}
     >
