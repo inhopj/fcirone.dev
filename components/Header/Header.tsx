@@ -60,7 +60,7 @@ const Header = ({ className: parentClassNames }: Props) => {
         className="bg-zinc-200 dark:bg-zinc-800 p-3 rounded-lg cursor-pointer"
         onClick={handleClick}
       >
-        <Image src={imgSrc} alt="toggle-theme-img" width={25} height={25} />
+        <Image src={imgSrc} alt="toggle-theme-img" width={20} height={20} />
       </button>}
     </div>
   )
