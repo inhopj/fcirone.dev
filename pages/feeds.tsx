@@ -1,9 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-// import Section from '../components/Feeds/Section'
-// import Header from '../components/Header/Header'
 import feeds from '../public/feeds.json'
+import Image from 'next/image'
 
 const Header = dynamic(
   () => import('../components/Header/Header'),
@@ -14,7 +13,6 @@ const Section = dynamic(
   { ssr: false }
 )
 
-// TODO - cleanup
 const Feeds: NextPage = () => {
 
   const { javascript, node, react } = feeds
@@ -32,18 +30,28 @@ const Feeds: NextPage = () => {
         bg-white
         dark:bg-zinc-900'
       >
-        <Header className='mb-7' />
+        <Header className='' />
+        <br />
+        <br />
+
         <Section
+          icon='/javascript.svg'
           title='Javascript'
           items={javascript}
         />
-        <br></br>
+        <br />
+        <br />
+
         <Section
+          icon='/node.png'
           title='Node'
           items={node}
         />
-        <br></br>
+        <br />
+        <br />
+
         <Section
+          icon='/react.svg'
           title='React'
           items={react}
         />
