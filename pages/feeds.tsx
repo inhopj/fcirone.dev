@@ -58,6 +58,37 @@ const Feeds: NextPage = () => {
           title='React'
           items={react}
         />
+
+        <div className='flex flex-col fixed bottom-10 right-10'>
+          <a href="#javascript" className='flex mb-3'>
+            <Image
+              className='rounded-lg'
+              src={'/javascript.svg'}
+              alt="logo-icon"
+              width={30}
+              height={30}
+            />
+          </a>
+          <a href="#node" className='flex mb-3'>
+            <Image
+              className='rounded-lg'
+              src={'/node.png'}
+              alt="logo-icon"
+              width={30}
+              height={35}
+            />
+          </a>
+          <a href="#react" className='flex'>
+            <Image
+              className='rounded-lg'
+              src={'/react.svg'}
+              alt="logo-icon"
+              width={30}
+              height={30}
+            />
+          </a>
+        </div>
+
       </div>
     </>
   )
