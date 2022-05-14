@@ -55,6 +55,10 @@ const Header = ({ className: parentClassNames }: Props) => {
           path={feedsPath}
           title="Feeds"
         />
+        <Anchor
+          path="#react"
+          title="react"
+        />
       </div>
       {mounted && <button
         className="bg-zinc-200 dark:bg-zinc-800 p-3 rounded-lg cursor-pointer"
