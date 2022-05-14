@@ -59,14 +59,14 @@ const Feeds: NextPage = () => {
           items={react}
         />
 
-        <div className='flex flex-col fixed bottom-10 right-10'>
-          <a href="#javascript" className='flex mb-3'>
+        <div className='flex flex-col fixed bottom-5 right-5 md:bottom-10 md:right-10'>
+          <a href="#javascript" className='flex mb-4 md:mb-3'>
             <Image
               className='rounded-lg'
               src={'/javascript.svg'}
               alt="logo-icon"
-              width={30}
-              height={30}
+              width={35}
+              height={35}
             />
           </a>
           <a href="#node" className='flex mb-3'>
@@ -74,8 +74,8 @@ const Feeds: NextPage = () => {
               className='rounded-lg'
               src={'/node.png'}
               alt="logo-icon"
-              width={30}
-              height={35}
+              width={35}
+              height={40}
             />
           </a>
           <a href="#react" className='flex'>
@@ -83,8 +83,8 @@ const Feeds: NextPage = () => {
               className='rounded-lg'
               src={'/react.svg'}
               alt="logo-icon"
-              width={30}
-              height={30}
+              width={35}
+              height={35}
             />
           </a>
         </div>

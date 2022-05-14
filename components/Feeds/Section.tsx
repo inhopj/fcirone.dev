@@ -38,7 +38,7 @@ const Section = ({
           alt="logo-icon"
           width={50}
           height={55}
-        /> */}
+          /> */}
         <a>
           <h1
             id={id}
