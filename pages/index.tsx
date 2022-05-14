@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import { Feed } from '../components/Feeds/Feeds'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 
