@@ -36,6 +36,7 @@ const Feeds: NextPage = () => {
 
         <Section
           icon='/javascript.svg'
+          id='javascript'
           title='Javascript'
           items={javascript}
         />
@@ -44,6 +45,7 @@ const Feeds: NextPage = () => {
 
         <Section
           icon='/node.png'
+          id='node'
           title='Node'
           items={node}
         />
@@ -52,6 +54,7 @@ const Feeds: NextPage = () => {
 
         <Section
           icon='/react.svg'
+          id='react'
           title='React'
           items={react}
         />
