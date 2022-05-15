@@ -11,6 +11,9 @@ const Hero = dynamic(
   { ssr: false }
 )
 
+// TODO - Add page transition
+// TODO - Add Spoken languages section
+// TODO - Add Footer with contacts
 const Home: NextPage = () => {
 
   return (
