@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { ThemeProvider } from 'next-themes'
 import { motion } from 'framer-motion';
 
 function MyApp({ Component, pageProps, router }: AppProps) {
@@ -11,16 +10,14 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       animate="animate"
       variants={{
         initial: {
-          opacity: 0,
+          opacity: 0.95,
         },
         animate: {
           opacity: 1,
         },
       }}
     >
-      <ThemeProvider attribute="class">
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <Component {...pageProps} />
     </motion.div>
   )
 }
