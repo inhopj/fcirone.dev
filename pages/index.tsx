@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+// import Contacts from '../components/Contacts/Contacts'
 
 const Header = dynamic(
   () => import('../components/Header/Header'),
@@ -10,8 +11,11 @@ const Hero = dynamic(
   () => import('../components/Hero/Hero'),
   { ssr: false }
 )
+const Contacts = dynamic(
+  () => import('../components/Contacts/Contacts'),
+  { ssr: false }
+)
 
-// TODO - Add page transition
 // TODO - Add Spoken languages section
 // TODO - Add Footer with contacts
 const Home: NextPage = () => {
@@ -25,12 +29,17 @@ const Home: NextPage = () => {
       </Head>
 
       {/* CONTAINER */}
-      <div className='flex flex-col min-h-screen justify-start items-center p-4 md:p-8
-        bg-white
-        dark:bg-zinc-900'
+      <div className='flex flex-col min-h-screen justify-start p-4 md:p-8 bg-zinc-900'
       >
-        <Header className='mb-7' />
-        <Hero className='mb-6' />
+        <div className='flex flex-col justify-start items-center mb-9'>
+
+          <Header className='mb-9' />
+          <Hero className='' />
+        </div>
+        <div className='flex flex-col items-center'>
+
+          <Contacts className='' />
+        </div>
       </div>
     </>
   )
