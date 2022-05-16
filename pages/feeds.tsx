@@ -28,7 +28,8 @@ const Feeds: NextPage = () => {
       {/* CONTAINER */}
       <div className='flex flex-col min-h-screen justify-start items-center p-4 md:p-8
         bg-white
-        dark:bg-zinc-900'
+        dark:bg-zinc-900
+        transition-all duration-400'
       >
         <Header className='' />
         <br />

@@ -11,7 +11,6 @@ const Hero = dynamic(
   { ssr: false }
 )
 
-// TODO - Add page transition
 // TODO - Add Spoken languages section
 // TODO - Add Footer with contacts
 const Home: NextPage = () => {
@@ -27,10 +26,11 @@ const Home: NextPage = () => {
       {/* CONTAINER */}
       <div className='flex flex-col min-h-screen justify-start items-center p-4 md:p-8
         bg-white
-        dark:bg-zinc-900'
+        dark:bg-zinc-900
+        transition-all duration-400'
       >
-        <Header className='mb-7' />
-        <Hero className='mb-6' />
+        <Header className='mb-7 transition-all duration-500' />
+        <Hero className='mb-6 transition-all duration-500' />
       </div>
     </>
   )

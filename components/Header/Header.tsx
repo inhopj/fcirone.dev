@@ -3,6 +3,7 @@ import classnames from 'classnames'
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Anchor from '../Link/Anchor';
+import { DarkModeToggle } from "react-dark-mode-toggle-2";
 
 interface Props {
   className?: string;
@@ -22,7 +23,6 @@ const Header = ({ className: parentClassNames }: Props) => {
     toggle(resolvedTheme as string)
   }
   const toggle = (value: string) => value === 'light' ? setTheme('dark') : setTheme('light')
-  
   let imgSrc
   console.log("Resolved theme ", resolvedTheme)
 
@@ -56,12 +56,17 @@ const Header = ({ className: parentClassNames }: Props) => {
           title="Feeds"
         />
       </div>
-      {mounted && <button
-        className="bg-zinc-200 dark:bg-zinc-800 p-3 rounded-lg cursor-pointer"
-        onClick={handleClick}
-      >
-        <Image src={imgSrc} alt="toggle-theme-img" width={20} height={20} />
-      </button>}
+
+      {/* DARK/LIGHT MODE TOGGLE */}
+      {mounted && <DarkModeToggle
+        onChange={() => {
+          handleClick()
+        }}
+        isDarkMode={resolvedTheme === 'dark' ? true : false}
+        size={50}
+        speed={2}
+      />}
+
     </div>
   )
 }
