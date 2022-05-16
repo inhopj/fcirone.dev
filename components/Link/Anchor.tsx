@@ -24,9 +24,9 @@ const Anchor = ({
       className={classnames(
         parentClassNames,
         isActive
-          ? 'font-semibold text-zinc-800 dark:text-zinc-200'
-          : 'font-normal text-zinc-600 dark:text-zinc-400',
-        'rounded-lg cursor-pointer hover:text-black dark:hover:text-white px-3 text-gray-600 dark:text-gray-400'
+          ? 'font-semibold text-zinc-200'
+          : 'font-normal text-zinc-400',
+        'rounded-lg cursor-pointer hover:text-white px-3 text-gray-400'
       )}>
       {title}
     </a>

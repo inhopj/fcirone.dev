@@ -19,13 +19,13 @@ const Card = ({
   return (
     <div
       className={classnames(
-        'bg-zinc-200 dark:bg-zinc-800 rounded-lg p-3',
+        'bg-zinc-800 rounded-lg p-3',
         parentClassNames
       )}
     >
       <p
         className={classnames(
-          "text-base md:text-lg text-black dark:text-white",
+          "text-base md:text-lg text-white",
           {
             'text-center': centerText
           },

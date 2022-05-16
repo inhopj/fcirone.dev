@@ -5,7 +5,7 @@ import Image from 'next/image'
 interface Props {
   className?: string;
   icon: string;
-  title: string;
+  title?: string;
   items: Feed[];
   id: string;
 }
@@ -42,7 +42,7 @@ const Section = ({
         />
         <a>
           <h1
-            className="flex text-2xl md:text-3xl text-black dark:text-white pl-2">
+            className="flex text-2xl md:text-3xl text-white pl-2">
             {title}
           </h1>
         </a>
@@ -69,7 +69,7 @@ const Section = ({
               <Card
                 key={index}
                 className={classnames(
-                  'text-zinc-600 dark:text-zinc-400',
+                  'text-zinc-400',
                   {
                     'mb-3': !last
                   },
