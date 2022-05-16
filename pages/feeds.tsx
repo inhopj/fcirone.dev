@@ -26,18 +26,19 @@ const Feeds: NextPage = () => {
       </Head>
 
       {/* CONTAINER */}
-      <div className='flex flex-col min-h-screen justify-start items-center p-4 md:p-8
-        bg-white
-        dark:bg-zinc-900'
+      <div className='flex flex-col min-h-screen justify-start items-center p-4 md:p-8 bg-zinc-900'
       >
         <Header className='' />
         <br />
-        <br />
+
+        <div className='flex justify-start items-center max-w-2xl w-full md:pl-3 pb-3 text-white text-xl'>
+          A weekly updated collection of Javascript,<br></br> Node and React news and articles
+        </div>
+
 
         <Section
           icon='/javascript.svg'
           id='javascript'
-          title='Javascript'
           items={javascript}
         />
         <br />
@@ -59,6 +60,7 @@ const Feeds: NextPage = () => {
           items={react}
         />
 
+        {/* TODO - Create component */}
         <div className='flex flex-col fixed bottom-5 right-5 md:bottom-10 md:right-10'>
           <a href="#javascript" className='flex mb-4 md:mb-3'>
             <Image
