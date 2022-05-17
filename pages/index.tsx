@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import About from '../components/About/About'
 // import Contacts from '../components/Contacts/Contacts'
 
 const Header = dynamic(
@@ -35,6 +36,7 @@ const Home: NextPage = () => {
 
           <Header className='mb-9' />
           <Hero className='' />
+          <About className='' />
         </div>
         <div className='flex flex-col items-center'>
 
