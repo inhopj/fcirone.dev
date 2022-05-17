@@ -21,43 +21,7 @@ const Hero = ({ className: parentClassNames }: Props) => {
           Francesco Cirone
         </h1>
         <h2 className='text-zinc-400 pb-4'>
-          Software dev into Node, React and everything-js
-        </h2>
-        <h2 className='text-zinc-400 pb-4'>
-          <p>
-            Worked at
-            <span
-              className='inline-flex items-center align-bottom pl-2'
-            >
-              <Image src="/comcast-logo.svg" alt="Comcast" width={20} height={20}/>
-              {/* TODO - Add over effect */}
-              <a
-                href="https://corporate.comcast.com/company/xfinity/internet/xfi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className='pl-1 cursor-pointer hover:text-white'
-              >
-                Comcast
-              </a>
-            </span>
-            {/* TODO - Add icon and link */}
-            ,
-            <span
-              className='inline-flex items-center align-bottom pl-2'
-            >
-              <Image src="/pixeltek_logo.png" alt="Pixeltek" width={15} height={15}/>
-              {/* TODO - Add over effect */}
-              <a
-                href="https://www.pxltk.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className='pl-1 cursor-pointer hover:text-white'
-              >
-                Pixeltek
-              </a>
-            </span>
-            , Toshiba and Tim
-          </p>
+          Web Developer
         </h2>
 
       </div>
@@ -66,8 +30,7 @@ const Hero = ({ className: parentClassNames }: Props) => {
           src={profilePic}
           height={100}
           width={100}
-          alt="profile image"
-          className=''
+          alt="profile avatar"
         />
       </div>
 
