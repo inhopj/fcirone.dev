@@ -1,9 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import About from '../components/About/About'
+// import Header from '../components/Header/Header'
+// import Hero from '../components/Hero/Hero'
+// import About from '../components/About/About'
 // import Contacts from '../components/Contacts/Contacts'
 
+// TODO - Use normal import as I'm not supporting multiple themes
+// hence no client on-demand things are needed 
 const Header = dynamic(
   () => import('../components/Header/Header'),
   { ssr: false }
@@ -12,13 +16,16 @@ const Hero = dynamic(
   () => import('../components/Hero/Hero'),
   { ssr: false }
 )
+const About = dynamic(
+  () => import('../components/About/About'),
+  { ssr: false }
+)
 const Contacts = dynamic(
   () => import('../components/Contacts/Contacts'),
   { ssr: false }
 )
 
 // TODO - Add Spoken languages section
-// TODO - Add Footer with contacts
 const Home: NextPage = () => {
 
   return (
