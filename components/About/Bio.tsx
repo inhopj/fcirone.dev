@@ -13,7 +13,7 @@ const Bio = ({ className: parentClassNames }: Props) => {
         Bio
       </div>
       <p>
-        Nintendo person! into outdoors, board sports &#128761; and foreign languages<br />(English, French, Spanish and a bit of Maroccan)
+        Nintendo person! into outdoors, board sports &#128761; &#32;and foreign languages<br />(English, French, Spanish and a bit of Maroccan)
       </p>
     </div>
 
