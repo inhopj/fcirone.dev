@@ -1,5 +1,6 @@
 import classnames from 'classnames'
 import Image from 'next/image'
+import Bio from './Bio';
 import Tech from './Tech';
 import Work from './Work';
 
@@ -17,12 +18,9 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
       )}
     >
       <div className='flex flex-col justify-start text-zinc-400'>
-        
-        {/* TECH SECTION */}
         <Tech />
-
-        {/* WORK SECTION */}
         <Work />
+        <Bio />
       </div>
     </div>
   )
