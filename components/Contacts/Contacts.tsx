@@ -15,7 +15,7 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
       )}
     >
       <div className='flex flex-col justify-start p-0 md:p-3'>
-        <div className='text-white text-xl md:text-4xl'>
+        <div className='text-white text-xl md:text-2xl'>
           Contacts
         </div>
         <div className='text-zinc-400 text-base md:text-lg'>
