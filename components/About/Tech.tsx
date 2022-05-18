@@ -4,8 +4,8 @@ interface Props {
   className?: String;
 }
 
-const Cotacts = ({ className: parentClassNames }: Props) => {
-
+// TODO - cleanup
+const Tech = ({ className: parentClassNames }: Props) => {
   return (
     <div className='pb-4'>
       <div>
@@ -49,4 +49,4 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
   )
 }
 
-export default Cotacts;
+export default Tech;
