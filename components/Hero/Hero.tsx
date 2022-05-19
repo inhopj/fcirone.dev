@@ -20,7 +20,7 @@ const Hero = ({ className: parentClassNames }: Props) => {
         <h1 className="text-3xl md:text-5xl text-white">
           Francesco Cirone
         </h1>
-        <h2 className='text-zinc-400 pb-4'>
+        <h2 className='text-zinc-400'>
           Web Developer
         </h2>
 
