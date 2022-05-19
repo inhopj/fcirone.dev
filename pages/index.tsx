@@ -25,7 +25,6 @@ const Contacts = dynamic(
   { ssr: false }
 )
 
-// TODO - Add Spoken languages section
 const Home: NextPage = () => {
 
   return (
@@ -46,7 +45,6 @@ const Home: NextPage = () => {
           <About className='' />
         </div>
         <div className='flex flex-col items-center'>
-
           <Contacts className='' />
         </div>
       </div>
