@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         <div className='flex flex-col justify-start items-center mb-9'>
 
           <Header className='mb-9' />
-          <Hero className='' />
+          <Hero className='mb-9' />
           <About className='' />
         </div>
         <div className='flex flex-col items-center'>
