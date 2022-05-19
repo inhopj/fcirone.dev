@@ -18,8 +18,8 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
       )}
     >
       <div className='flex flex-col justify-start text-zinc-400'>
-        <Tech />
         <Work />
+        <Tech />
         <Bio />
       </div>
     </div>
