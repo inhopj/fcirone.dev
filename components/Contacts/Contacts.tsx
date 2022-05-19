@@ -14,38 +14,31 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
         parentClassNames
       )}
     >
-      <div className='flex flex-col justify-start p-0 md:p-3'>
-        <div className='text-white text-xl md:text-2xl'>
-          Contacts
-        </div>
-        <div className='text-zinc-400 text-base md:text-lg'>
-          Get in touch!
-        </div>
-      </div>
 
-      <div className='flex justify-center p-0 md:p-3 text-white text-2xl md:text-4xl'>
-        <div className='flex p-3 bg-zinc-800 rounded-lg hover:bg-indigo-600 mr-3'>
+      <div className='flex justify-center md:mx-4 text-white text-2xl md:text-4xl border-t border-zinc-400 pt-4'>
+        <div className='flex mr-3'>
           <Image
-            src='/github-logo.png'
+            src='/github.svg'
             alt="logo-icon"
             width={25}
             height={25}
           />
         </div>
-        <div className='flex p-3 bg-zinc-800 rounded-lg hover:bg-indigo-600 mr-3'>
+        <div className='flex mr-3'>
           <Image
-            src='/github-logo.png'
+            src='/linkedin.svg'
             alt="logo-icon"
             width={25}
             height={25}
+            className="rounded"
           />
         </div>
-        <div className='flex p-3 bg-zinc-800 rounded-lg hover:bg-indigo-600'>
+        <div className='flex mr-3'>
           <Image
-            src='/github-logo.png'
+            src='/mail.svg'
             alt="logo-icon"
-            width={25}
-            height={25}
+            width={30}
+            height={30}
           />
         </div>
       </div>
