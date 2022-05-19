@@ -1,3 +1,4 @@
+import classnames from 'classnames';
 import Image from 'next/image'
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
 // TODO - cleanup
 const Tech = ({ className: parentClassNames }: Props) => {
   return (
-    <div className='pb-4'>
+    <div className={classnames(parentClassNames)}>
       <p className='text-white text-xl md:text-2xl'>
         Skills
       </p>
