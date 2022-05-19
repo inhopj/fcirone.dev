@@ -18,13 +18,12 @@ const Work = ({ className: parentClassNames }: Props) => {
         <span
           className='inline-flex items-center align-bottom'
         >
-          {/* TODO - Add over effect */}
           <Image src="/comcast-logo.svg" alt="Comcast" width={20} height={20} />
           <a
             href="https://corporate.comcast.com/company/xfinity/internet/xfi"
             target="_blank"
             rel="noopener noreferrer"
-            className='pl-1 cursor-pointer text-white'
+            className='pl-1 cursor-pointer hover:text-white underline underline-offset-2'
           >
             Comcast,
           </a>
@@ -32,18 +31,29 @@ const Work = ({ className: parentClassNames }: Props) => {
         <span
           className='inline-flex items-center align-bottom pl-2'
         >
-          {/* TODO - Add over effect */}
           <Image src="/pixeltek_logo.png" alt="Pixeltek" width={15} height={15} />
           <a
             href="https://www.pxltk.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className='pl-1 cursor-pointer text-white pr-1'
+            className='pl-1 cursor-pointer pr-1 hover:text-white underline underline-offset-2'
           >
             Pixeltek
           </a>
         </span>
-        &#32; and Toshiba. <br /> Recently as NodeJs Dev at Tim.
+        &#32; and Toshiba. <br /> Recently as NodeJs Dev at
+        <span
+          className='inline-flex items-center align-bottom pl-2'
+        >
+          <a
+            href="https://www.timvision.it"
+            target="_blank"
+            rel="noopener noreferrer"
+            className='cursor-pointer pr-1 hover:text-white underline underline-offset-2'
+          >
+            Timvision
+          </a>
+        </span>
       </p>
     </div>
   )
