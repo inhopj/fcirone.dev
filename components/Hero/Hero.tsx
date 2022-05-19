@@ -2,13 +2,11 @@ import Image from 'next/image'
 import classnames from 'classnames'
 import profilePic from '../../public/avatar.svg'
 
-
 interface Props {
   className?: String;
 }
 
 const Hero = ({ className: parentClassNames }: Props) => {
-
   return (
     <div
       className={classnames(
@@ -33,7 +31,6 @@ const Hero = ({ className: parentClassNames }: Props) => {
           alt="profile avatar"
         />
       </div>
-
     </div>
   )
 }
