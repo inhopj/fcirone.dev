@@ -5,7 +5,7 @@ const Bio = () => {
         Bio
       </div>
       <p>
-        Nintendo person! into outdoors &#127794; &#32;, board sports &#128761; &#32;<br />and foreign languages<br />(English, French, Spanish and a bit of Maroccan)
+        Nintendo person! into outdoors &#127794; &#32;, board sports &#128761; &#32;<br />and foreign languages<br />(🇬🇧, 🇫🇷, 🇪🇸 and a bit of 🇲🇦)
       </p>
     </div>
 
