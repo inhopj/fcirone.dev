@@ -14,8 +14,42 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
         parentClassNames
       )}
     >
+      <div className='flex justify-center md:mx-4 text-white text-sm border-t border-zinc-400 pt-4 mb-4'>
+        Website built using:
+        <span
+          className='inline-flex items-center align-center mr-2 ml-1'
+        >
+          <Image
+            src='/nextjs-icon.svg'
+            alt="next-logo-icon"
+            width={20}
+            height={20}
+          />
+        </span>
+        <span
+          className='inline-flex items-center align-center mr-2'
+        >
+          <Image
+            src='/typescript.svg'
+            alt="typescript-logo-icon"
+            width={20}
+            height={20}
+          />
+        </span>
+        <span
+          className='inline-flex items-center align-center mr-2'
+        >
+          <Image
+            src='/tailwind.svg'
+            alt="tailwind-logo-icon"
+            width={20}
+            height={20}
+          />
+        </span>
 
-      <div className='flex justify-center md:mx-4 text-white text-2xl md:text-4xl border-t border-zinc-400 pt-4'>
+      </div>
+
+      <div className='flex justify-center md:mx-4 text-white text-2xl md:text-4xl'>
         <div className='flex mr-4 cursor-pointer'>
           <Image
             src='/github.svg'
