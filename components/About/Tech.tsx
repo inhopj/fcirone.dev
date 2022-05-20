@@ -12,9 +12,6 @@ const Tech = ({ className: parentClassNames }: Props) => {
       <p className='text-white text-xl md:text-2xl'>
         Skills
       </p>
-      <p>
-        Hi folks!
-      </p>
       <p className='mb-3'>
         I love using
         <span
@@ -46,7 +43,7 @@ const Tech = ({ className: parentClassNames }: Props) => {
             React
           </a>
         </span>
-        to make web things.<br />Check out my Feeds for related contents!
+        to <br />build web things.<br />Check out my Feeds for related contents!
       </p>
     </div>
 
