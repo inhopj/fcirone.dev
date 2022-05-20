@@ -35,7 +35,7 @@ const Header = ({ className: parentClassNames }: Props) => {
       {/* TODO - use svg instead of png */}
       <div className='flex'>
         <Image
-          src='/github-logo.png'
+          src='/github.svg'
           alt="logo-icon"
           width={25}
           height={25}
