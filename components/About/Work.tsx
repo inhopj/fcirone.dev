@@ -31,7 +31,7 @@ const Work = ({ className: parentClassNames }: Props) => {
         <span
           className='inline-flex items-center align-bottom pl-2'
         >
-          <Image src="/pixeltek_logo.png" alt="Pixeltek" width={15} height={15} />
+          <Image src="/pixeltek-logo.png" alt="Pixeltek" width={15} height={15} />
           <a
             href="https://www.pxltk.com/"
             target="_blank"
