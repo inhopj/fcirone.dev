@@ -20,7 +20,6 @@ const Header = ({ className: parentClassNames }: Props) => {
       )}
     >
       <div className="flex justify-start">
-        {/* TODO - Create constants file */}
         <Anchor
           path={homePath}
           title="Home"
@@ -32,7 +31,6 @@ const Header = ({ className: parentClassNames }: Props) => {
         />
       </div>
       {/* TODO - Add link to portfolio repo */}
-      {/* TODO - use svg instead of png */}
       <div className='flex'>
         <Image
           src='/github.svg'
