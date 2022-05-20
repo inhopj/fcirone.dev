@@ -4,21 +4,22 @@ import { motion } from 'framer-motion';
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
-    <motion.div
-      key={router.route}
-      initial="initial"
-      animate="animate"
-      variants={{
-        initial: {
-          opacity: 1,
-        },
-        animate: {
-          opacity: 0.97,
-        }
-      }}
-    >
-      <Component {...pageProps} />
-    </motion.div>
+    // <motion.div
+    //   key={router.route}
+    //   initial="initial"
+    //   animate="animate"
+    //   variants={{
+    //     initial: {
+    //       opacity: 1,
+    //     },
+    //     animate: {
+    //       opacity: 0.97,
+    //     }
+    //   }}
+    // >
+    //   <Component {...pageProps} />
+    // </motion.div>
+    <Component {...pageProps} />
   )
 }
 
