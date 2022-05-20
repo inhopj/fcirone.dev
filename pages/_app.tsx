@@ -10,11 +10,11 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       animate="animate"
       variants={{
         initial: {
-          opacity: 0.95,
-        },
-        animate: {
           opacity: 1,
         },
+        animate: {
+          opacity: 0.97,
+        }
       }}
     >
       <Component {...pageProps} />
