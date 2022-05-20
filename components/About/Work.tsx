@@ -43,13 +43,13 @@ const Work = ({ className: parentClassNames }: Props) => {
         </span>
         &#32; and Toshiba. <br /> Recently as NodeJs Dev at
         <span
-          className='inline-flex items-center align-bottom pl-2'
+          className='inline-flex items-center align-bottom pl-1'
         >
           <a
             href="https://www.timvision.it"
             target="_blank"
             rel="noopener noreferrer"
-            className='cursor-pointer pr-1 hover:text-white underline underline-offset-2'
+            className='cursor-pointer hover:text-white underline underline-offset-2'
           >
             Timvision
           </a>
