@@ -20,16 +20,16 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
           <Image
             src='/github.svg'
             alt="logo-icon"
-            width={25}
-            height={25}
+            width={35}
+            height={35}
           />
         </div>
         <div className='flex mr-3'>
           <Image
             src='/linkedin.svg'
             alt="logo-icon"
-            width={25}
-            height={25}
+            width={35}
+            height={35}
             className="rounded"
           />
         </div>
@@ -37,8 +37,8 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
           <Image
             src='/mail.svg'
             alt="logo-icon"
-            width={30}
-            height={30}
+            width={40}
+            height={40}
           />
         </div>
       </div>
