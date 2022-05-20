@@ -16,7 +16,7 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
     >
 
       <div className='flex justify-center md:mx-4 text-white text-2xl md:text-4xl border-t border-zinc-400 pt-4'>
-        <div className='flex mr-3 cursor-pointer'>
+        <div className='flex mr-4 cursor-pointer'>
           <Image
             src='/github.svg'
             alt="logo-icon"
@@ -24,7 +24,7 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
             height={35}
           />
         </div>
-        <div className='flex mr-3 cursor-pointer'>
+        <div className='flex mr-4 cursor-pointer'>
           <Image
             src='/linkedin.svg'
             alt="logo-icon"
