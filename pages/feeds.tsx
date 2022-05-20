@@ -1,17 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
 import feeds from '../public/feeds.json'
 import Image from 'next/image'
-
-const Header = dynamic(
-  () => import('../components/Header/Header'),
-  { ssr: false }
-)
-const Section = dynamic(
-  () => import('../components/Feeds/Section'),
-  { ssr: false }
-)
+import Header from '../components/Header/Header'
+import Section from '../components/Feeds/Section'
 
 const Feeds: NextPage = () => {
 
