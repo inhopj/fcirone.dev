@@ -1,12 +1,12 @@
 import classnames from 'classnames'
 import Image from 'next/image'
+import Github from '../Icons/Github';
 
 interface Props {
   className?: String;
 }
 
 const Cotacts = ({ className: parentClassNames }: Props) => {
-
   return (
     <div
       className={classnames(
@@ -46,24 +46,18 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
             height={20}
           />
         </span>
-
       </div>
 
       <div className='flex justify-center md:mx-4 text-white text-2xl md:text-4xl'>
         <div className='flex mr-4 cursor-pointer'>
-          <Image
-            src='/github.svg'
-            alt="logo-icon"
-            width={35}
-            height={35}
-          />
+          <Github className='fill-white w-8' />
         </div>
         <div className='flex mr-4 cursor-pointer'>
           <Image
             src='/linkedin.svg'
             alt="logo-icon"
-            width={35}
-            height={35}
+            width={30}
+            height={30}
             className="rounded"
           />
         </div>
@@ -71,12 +65,11 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
           <Image
             src='/mail.svg'
             alt="logo-icon"
-            width={40}
-            height={40}
+            width={35}
+            height={35}
           />
         </div>
       </div>
-
     </div>
   )
 }
