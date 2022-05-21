@@ -30,10 +30,12 @@ const Header = ({ className: parentClassNames }: Props) => {
           title="Feeds"
         />
       </div>
-      {/* TODO - Add link to portfolio repo */}
-      <div className='flex cursor-pointer'>
+      <a
+        className='flex cursor-pointer'
+        href='https://github.com/inhopj/nextjs_typescript'
+      >
         <Github className='fill-white hover:fill-yellow-200 w-8' />
-      </div>
+      </a>
     </div>
   )
 }
