@@ -30,9 +30,12 @@ const Header = ({ className: parentClassNames }: Props) => {
           title="Feeds"
         />
       </div>
+      {/* eslint-disable-next-line react/jsx-no-target-blank */}
       <a
         className='flex cursor-pointer'
         href='https://github.com/inhopj/nextjs_typescript'
+        target="_blank"
+        rel="noopener"
       >
         <Github className='fill-white hover:fill-yellow-200 w-8' />
       </a>
