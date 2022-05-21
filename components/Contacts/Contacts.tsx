@@ -15,7 +15,7 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
       )}
     >
       <div className='flex justify-center md:mx-4 text-white text-sm border-t border-zinc-400 pt-4 mb-4'>
-        Website built using:
+        Powered by
         <span
           className='inline-flex items-center align-center mr-2 ml-1'
         >
