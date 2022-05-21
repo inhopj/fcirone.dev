@@ -5,7 +5,7 @@ import Tech from './Tech';
 import Work from './Work';
 
 interface Props {
-  className?: String;
+  className?: string;
 }
 
 const Cotacts = ({ className: parentClassNames }: Props) => {

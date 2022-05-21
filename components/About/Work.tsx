@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import Image from 'next/image'
 
 interface Props {
-  className?: String;
+  className?: string;
 }
 
 const Work = ({ className: parentClassNames }: Props) => {

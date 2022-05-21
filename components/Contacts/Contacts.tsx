@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Github from '../Icons/Github';
 
 interface Props {
-  className?: String;
+  className?: string;
 }
 
 const Cotacts = ({ className: parentClassNames }: Props) => {
