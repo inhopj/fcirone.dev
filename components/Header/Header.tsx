@@ -1,6 +1,6 @@
 import classnames from 'classnames'
 import Anchor from '../Link/Anchor'
-import Image from 'next/image'
+import Github from '../Icons/Github'
 
 interface Props {
   className?: string;
@@ -32,12 +32,7 @@ const Header = ({ className: parentClassNames }: Props) => {
       </div>
       {/* TODO - Add link to portfolio repo */}
       <div className='flex'>
-        <Image
-          src='/github.svg'
-          alt="logo-icon"
-          width={25}
-          height={25}
-        />
+      <Github className='fill-white hover:fill-yellow-200 w-8' />
       </div>
     </div>
   )
