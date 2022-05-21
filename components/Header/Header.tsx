@@ -31,8 +31,8 @@ const Header = ({ className: parentClassNames }: Props) => {
         />
       </div>
       {/* TODO - Add link to portfolio repo */}
-      <div className='flex'>
-      <Github className='fill-white hover:fill-yellow-200 w-8' />
+      <div className='flex cursor-pointer'>
+        <Github className='fill-white hover:fill-yellow-200 w-8' />
       </div>
     </div>
   )
