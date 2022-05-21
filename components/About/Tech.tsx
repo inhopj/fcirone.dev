@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import classnames from 'classnames';
 import Image from 'next/image'
 
@@ -20,7 +21,7 @@ const Tech = ({ className: parentClassNames }: Props) => {
           <a
             href="https://nodejs.org"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
             className='pl-1 cursor-pointer hover:text-white'
           >
             Node
@@ -37,7 +38,7 @@ const Tech = ({ className: parentClassNames }: Props) => {
           <a
             href="https://reactjs.org"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
             className='cursor-pointer hover:text-white'
           >
             React
