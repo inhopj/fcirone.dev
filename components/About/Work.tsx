@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import classNames from 'classnames';
 import Image from 'next/image'
 
@@ -22,7 +23,7 @@ const Work = ({ className: parentClassNames }: Props) => {
           <a
             href="https://corporate.comcast.com/company/xfinity/internet/xfi"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
             className='pl-1 cursor-pointer hover:text-white underline underline-offset-2'
           >
             Comcast,
@@ -35,7 +36,7 @@ const Work = ({ className: parentClassNames }: Props) => {
           <a
             href="https://www.pxltk.com/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
             className='pl-1 cursor-pointer pr-1 hover:text-white underline underline-offset-2'
           >
             Pixeltek
