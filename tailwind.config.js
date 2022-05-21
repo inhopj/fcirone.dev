@@ -19,6 +19,5 @@ module.exports = {
       zinc: colors.zinc
     },
   },
-  plugins: [],
-  darkMode: 'class',
+  plugins: []
 }
