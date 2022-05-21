@@ -3,7 +3,7 @@ import classnames from 'classnames'
 import profilePic from '../../public/avatar.svg'
 
 interface Props {
-  className?: String;
+  className?: string;
 }
 
 const Hero = ({ className: parentClassNames }: Props) => {

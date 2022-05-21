@@ -2,7 +2,7 @@ import classnames from 'classnames';
 import Image from 'next/image'
 
 interface Props {
-  className?: String;
+  className?: string;
 }
 
 // TODO - cleanup
