@@ -28,8 +28,10 @@ const About = ({ className: parentClassNames }: Props) => {
         {/* TODO - Create Contacts component */}
         <div className='flex justify-center'>
           <div className='flex mr-4 cursor-pointer'>
+            {/* TODO - wrap Image in anchor and add link to github profile */}
             <Github className='fill-white w-8' />
           </div>
+          {/* TODO - wrap Image in anchor and add link to linkedin profile */}
           <div className='flex mr-4 cursor-pointer'>
             <Image
               src='/linkedin.svg'
@@ -39,6 +41,7 @@ const About = ({ className: parentClassNames }: Props) => {
               className="rounded"
             />
           </div>
+          {/* TODO - wrap Image in anchor and add mailto */}
           <div className='flex cursor-pointer'>
             <Image
               src='/mail.svg'
