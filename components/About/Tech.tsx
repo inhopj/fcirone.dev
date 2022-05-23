@@ -6,7 +6,6 @@ interface Props {
   className?: string;
 }
 
-// TODO - cleanup
 const Tech = ({ className: parentClassNames }: Props) => {
   return (
     <div className={classnames(parentClassNames)}>
@@ -26,6 +25,7 @@ const Tech = ({ className: parentClassNames }: Props) => {
           >
             Node
           </a>
+          {/* TODO - create Node-svg component */}
           <Image src="/node-js.svg" alt="Node" width={20} height={20} />
         </span>
         <span>
@@ -33,7 +33,8 @@ const Tech = ({ className: parentClassNames }: Props) => {
         </span>
         <span
           className='inline-flex items-center align-bottom pl-1 pr-1'
-        >
+          >
+          {/* TODO - create React-svg component */}
           <Image src="/react.svg" alt="React" width={20} height={20} />
           <a
             href="https://reactjs.org"
@@ -47,7 +48,6 @@ const Tech = ({ className: parentClassNames }: Props) => {
         to <br />build web things.<br />Check out my Feeds for related contents!
       </p>
     </div>
-
   )
 }
 
