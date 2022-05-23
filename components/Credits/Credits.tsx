@@ -15,7 +15,7 @@ const Credits = ({ className: parentClassNames }: Props) => {
         parentClassNames
       )}
     >
-      <div className='flex justify-center md:mx-4 text-white text-sm border-t border-zinc-400 pt-4 mb-4'>
+      <div className='flex justify-center md:mx-4 text-white text-sm border-t border-zinc-400 pt-4'>
         <span
           className='inline-flex items-center align-center mr-2'
         >
