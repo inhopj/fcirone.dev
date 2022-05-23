@@ -5,6 +5,9 @@ import Image from 'next/image'
 import Header from '../components/Header/Header'
 import Section from '../components/Feeds/Section'
 
+// TODO
+// use margin instead of <br>
+// reafactor Section component to use children for the section icon
 const Feeds: NextPage = () => {
 
   const { javascript, node, react } = feeds
@@ -23,8 +26,8 @@ const Feeds: NextPage = () => {
         <Header className='' />
         <br />
 
-        <div className='flex justify-start items-center max-w-2xl w-full md:pl-3 pb-3 text-white text-xl'>
-          A weekly updated collection of Javascript,<br></br> Node and React news and articles
+        <div className='flex justify-start items-center max-w-2xl w-full md:pl-3 pb-6 text-white text-xl'>
+          Monthly updated (more or less xD)
         </div>
 
 
