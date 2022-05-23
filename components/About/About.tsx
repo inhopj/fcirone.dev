@@ -39,7 +39,7 @@ const About = ({ className: parentClassNames }: Props) => {
               className="rounded"
             />
           </div>
-          <div className='flex mr-3 cursor-pointer'>
+          <div className='flex cursor-pointer'>
             <Image
               src='/mail.svg'
               alt="logo-icon"
