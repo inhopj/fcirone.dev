@@ -19,11 +19,13 @@ const About = ({ className: parentClassNames }: Props) => {
       )}
     >
       <div className='flex flex-col justify-start text-zinc-400'>
+        {/* TODO - Check if uniform space between Work, Tech and Bio sections (spoiler, it's not) */}
         <Work className='mb-6' />
         <Tech className='mb-6' />
         <Bio className='mb-6' />
 
         {/* CONTACTS */}
+        {/* TODO - Create Contacts component */}
         <div className='flex justify-center'>
           <div className='flex mr-4 cursor-pointer'>
             <Github className='fill-white w-8' />
