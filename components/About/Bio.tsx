@@ -1,6 +1,15 @@
-const Bio = () => {
+import classnames from "classnames";
+
+interface Props {
+  className?: string;
+}
+
+const Bio = ({ className: parentClassNames }: Props) => {
   return (
-    <div className='pb-4'>
+    <div className={classnames(
+      'pb-4',
+      parentClassNames
+    )}>
       <div className='text-white text-xl md:text-2xl'>
         Bio
       </div>
