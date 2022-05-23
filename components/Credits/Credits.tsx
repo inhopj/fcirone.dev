@@ -1,12 +1,13 @@
 import classnames from 'classnames'
 import Image from 'next/image'
 import Github from '../Icons/Github';
+import Vercel from '../Icons/Vercel';
 
 interface Props {
   className?: string;
 }
 
-const Cotacts = ({ className: parentClassNames }: Props) => {
+const Credits = ({ className: parentClassNames }: Props) => {
   return (
     <div
       className={classnames(
@@ -15,7 +16,11 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
       )}
     >
       <div className='flex justify-center md:mx-4 text-white text-sm border-t border-zinc-400 pt-4 mb-4'>
-        Powered by
+        <span
+          className='inline-flex items-center align-center mr-2'
+        >
+          Powered by
+        </span>
         <span
           className='inline-flex items-center align-center mr-2 ml-1'
         >
@@ -46,35 +51,12 @@ const Cotacts = ({ className: parentClassNames }: Props) => {
             height={20}
           />
         </span>
-      </div>
-
-      <div className='flex justify-center md:mx-4 text-white text-2xl md:text-4xl'>
-        <div className='flex mr-4 cursor-pointer'>
-          <Github className='fill-white w-8' />
-        </div>
-        <div className='flex mr-4 cursor-pointer'>
-          <Image
-            src='/linkedin.svg'
-            alt="logo-icon"
-            width={30}
-            height={30}
-            className="rounded"
-          />
-        </div>
-        <div className='flex mr-3 cursor-pointer'>
-          <Image
-            src='/mail.svg'
-            alt="logo-icon"
-            width={35}
-            height={35}
-          />
-        </div>
-      </div>
-      <div className='text-white'>
-        TEST TTL
+        <span className='inline-flex items-center align-center'>
+          <Vercel className='fill-white w-14' />
+        </span>
       </div>
     </div>
   )
 }
 
-export default Cotacts;
+export default Credits;
