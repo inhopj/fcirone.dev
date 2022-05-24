@@ -12,10 +12,11 @@ const Home: NextPage = () => {
         <title>Personal Web Page</title>
         <meta name="description" content="My personal web page" charSet="UTF-8" />
         {/* TODO - add personal favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/avatar.svg" />
       </Head>
       {/* CONTAINER */}
-      <div className='flex flex-col min-h-screen justify-start p-4 md:p-8 bg-zinc-900'
+      <div
+        className='flex flex-col min-h-screen justify-start p-4 md:p-8 bg-zinc-900'
       >
         <div className='flex flex-col justify-start items-center mb-8'>
           <Header className='mb-9' />
