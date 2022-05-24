@@ -29,6 +29,7 @@ const Header = ({ className: parentClassNames }: Props) => {
           title="Feeds"
         />
       </div>
+      {/* TODO - create constants file with links */}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
       <a
         className='flex cursor-pointer'
