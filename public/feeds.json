@@ -1,24 +1,36 @@
 {
   "javascript": [
     {
-      "title": "js 1",
-      "link": "https://someRandomUrlJS1"
+      "title": "Playwright Test can now test React, Vue or Svelte components",
+      "link": "https://github.com/microsoft/playwright/releases/tag/v1.22.0"
     },
     {
-      "title": "js 2",
-      "link": "http://someRandomUrlJS2"
+      "title": "LaTeX like syntax to render math expressions within Markdown",
+      "link": "https://github.blog/changelog/2022-05-19-render-mathematical-expressions-in-markdown/"
     },
     {
-      "title": "js 2",
-      "link": "http://someRandomUrlJS2"
+      "title": "Meta transferring Jest project to OpenJs Foundation",
+      "link": "https://engineering.fb.com/2022/05/11/open-source/jest-openjs-foundation/"
     },
     {
-      "title": "js 2",
-      "link": "http://someRandomUrlJS2"
+      "title": "crypto-random-string 5.0 adds support for browsers",
+      "link": "https://github.com/sindresorhus/crypto-random-string/releases/tag/v5.0.0"
     },
     {
-      "title": "js 2",
-      "link": "http://someRandomUrlJS2"
+      "title": "Babylon.js 5.0: The Powerful 3D Rendering Engine",
+      "link": "https://babylonjs.medium.com/babylon-js-5-0-beyond-the-stars-2d11d4c3d07"
+    },
+    {
+      "title": "Porting Zelda Classic to the web 🗡️ ",
+      "link": "https://hoten.cc/blog/porting-zelda-classic-to-the-web/"
+    },
+    {
+      "title": "8 Javascript questions that may confuse you",
+      "link": "https://pitayan.com/posts/8-javascript-quiz-that-may-confuse-you"
+    },
+    {
+      "title": "TypeScript Error Translator: Make TS Errors Human Readable",
+      "link": "https://marketplace.visualstudio.com/items?itemName=mattpocock.ts-error-translator#tserror"
     }
   ],
   "node": [
