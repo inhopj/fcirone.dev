@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import classnames from 'classnames'
-import profilePic from '../../public/avatar.svg'
 
 interface Props {
   className?: string;
@@ -24,8 +23,9 @@ const Hero = ({ className: parentClassNames }: Props) => {
 
       </div>
       <div className='flex self-start mb-4 md:mb-0 '>
+        {/* TODO - Create avatar component with embedded svg */}
         <Image
-          src={profilePic}
+          src='/avatar.svg'
           height={100}
           width={100}
           alt="profile avatar"
