@@ -8,7 +8,6 @@ interface Props {
 
 const Header = ({ className: parentClassNames }: Props) => {
 
-  // TODO - Create constants file
   const homePath = '/'
   const feedsPath = '/feeds'
 
@@ -33,7 +32,7 @@ const Header = ({ className: parentClassNames }: Props) => {
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
       <a
         className='flex cursor-pointer'
-        href='https://github.com/inhopj/nextjs_typescript'
+        href='https://github.com/inhopj/fcirone.dev'
         target="_blank"
         rel="noopener"
       >
