@@ -11,7 +11,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Personal Web Page</title>
         <meta name="description" content="My personal web page" charSet="UTF-8" />
-        {/* TODO - add personal favicon */}
         <link rel="icon" href="/avatar.svg" />
       </Head>
       {/* CONTAINER */}
