@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           <About className='' />
         </div>
         <div className='flex flex-col items-center'>
-          <Contacts className='' />
+          <Contacts className='mb-4' />
           <Credits className='' />
         </div>
       </div>
