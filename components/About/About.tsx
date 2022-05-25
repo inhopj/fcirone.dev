@@ -1,8 +1,7 @@
 import classnames from 'classnames'
-import Contacts from '../Contacts';
-import Bio from './Bio';
-import Tech from './Tech';
-import Work from './Work';
+import Bio from './Bio'
+import Tech from './Tech'
+import Work from './Work'
 
 // TODO - centralize this infinitely duplicated interface
 interface Props {
@@ -22,7 +21,6 @@ const About = ({ className: parentClassNames }: Props) => {
         <Work className='mb-6' />
         <Tech className='mb-6' />
         <Bio className='mb-6' />
-        <Contacts className='' />
       </div>
     </div>
   )
