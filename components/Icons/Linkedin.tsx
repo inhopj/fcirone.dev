@@ -9,8 +9,8 @@ const Linkedin = ({ className: parentClassNames }: Props) => {
     <svg
       className={classNames(parentClassNames)}
       xmlns="http://www.w3.org/2000/svg"
-      width="72"
-      height="72"
+      width="30"
+      height="30"
       viewBox="0 0 72 72"
     >
       <g
