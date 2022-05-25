@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/Header/Header'
-import Hero from '../components/Hero/Hero'
+import Hero from '../components/Hero'
 import About from '../components/About/About'
 import Credits from '../components/Credits/Credits'
 
