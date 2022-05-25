@@ -4,6 +4,7 @@ import Header from '../components/Header/Header'
 import Hero from '../components/Hero'
 import About from '../components/About/About'
 import Credits from '../components/Credits/Credits'
+import Contacts from '../components/Contacts'
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
           <About className='' />
         </div>
         <div className='flex flex-col items-center'>
+          <Contacts className='' />
           <Credits className='' />
         </div>
       </div>
