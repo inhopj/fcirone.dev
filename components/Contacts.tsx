@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import classnames from 'classnames'
 import Image from 'next/image'
 import Github from './Icons/Github';
@@ -16,8 +17,13 @@ const Contacts = ({ className: parentClassNames }: Props) => {
       )}
     >
       <div className='flex mr-4 cursor-pointer'>
-        {/* TODO - wrap Image in anchor and add link to github profile */}
-        <Github className='fill-white w-8' />
+        <a
+          href='https://github.com/inhopj'
+          target="_blank"
+          rel="noopener"
+        >
+          <Github className='fill-white w-8' />
+        </a>
       </div>
       {/* TODO - wrap Image in anchor and add link to linkedin profile */}
       <div className='flex mr-4 cursor-pointer'>
