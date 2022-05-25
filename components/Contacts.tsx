@@ -2,6 +2,7 @@
 import classnames from 'classnames'
 import Image from 'next/image'
 import Github from './Icons/Github';
+import Linkedin from './Icons/Linkedin';
 
 // TODO - centralize this infinitely duplicated interface
 interface Props {
@@ -12,7 +13,7 @@ const Contacts = ({ className: parentClassNames }: Props) => {
   return (
     <div
       className={classnames(
-        'flex justify-center',
+        'flex justify-center items-center',
         parentClassNames
       )}
     >
@@ -25,15 +26,16 @@ const Contacts = ({ className: parentClassNames }: Props) => {
           <Github className='fill-white w-8' />
         </a>
       </div>
-      {/* TODO - wrap Image in anchor and add link to linkedin profile */}
-      <div className='flex mr-4 cursor-pointer'>
-        <Image
-          src='/linkedin.svg'
-          alt="logo-icon"
-          width={30}
-          height={30}
-          className="rounded"
-        />
+      <div
+        className='flex mr-4 cursor-pointer'
+      >
+        <a
+          href='https://linkedin.com/in/fcirone'
+          target="_blank"
+          rel="noopener"
+        >
+          <Linkedin className='' />
+        </a>
       </div>
       {/* TODO - wrap Image in anchor and add mailto */}
       <div className='flex cursor-pointer'>
