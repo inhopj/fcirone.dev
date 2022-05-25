@@ -1,5 +1,6 @@
 import classnames from 'classnames'
 import Image from 'next/image'
+import Contacts from '../Contacts';
 import Github from '../Icons/Github';
 import Bio from './Bio';
 import Tech from './Tech';
@@ -24,33 +25,7 @@ const About = ({ className: parentClassNames }: Props) => {
         <Tech className='mb-6' />
         <Bio className='mb-6' />
 
-        {/* CONTACTS */}
-        {/* TODO - Create Contacts component */}
-        <div className='flex justify-center'>
-          <div className='flex mr-4 cursor-pointer'>
-            {/* TODO - wrap Image in anchor and add link to github profile */}
-            <Github className='fill-white w-8' />
-          </div>
-          {/* TODO - wrap Image in anchor and add link to linkedin profile */}
-          <div className='flex mr-4 cursor-pointer'>
-            <Image
-              src='/linkedin.svg'
-              alt="logo-icon"
-              width={30}
-              height={30}
-              className="rounded"
-            />
-          </div>
-          {/* TODO - wrap Image in anchor and add mailto */}
-          <div className='flex cursor-pointer'>
-            <Image
-              src='/mail.svg'
-              alt="logo-icon"
-              width={35}
-              height={35}
-            />
-          </div>
-        </div>
+        <Contacts className='' />
       </div>
     </div>
   )
