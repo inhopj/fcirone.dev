@@ -52,7 +52,7 @@ const Work = ({ className: parentClassNames }: Props) => {
             rel="noopener noreferrer"
             className='cursor-pointer hover:text-white underline underline-offset-2'
           >
-            Timvision
+            Tim
           </a>
         </span>
       </p>
