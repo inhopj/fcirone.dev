@@ -37,7 +37,7 @@ const Header = ({ className: parentClassNames }: Props) => {
         target="_blank"
         rel="noopener"
       >
-        <Github className='fill-white hover:fill-yellow-200 w-8' />
+        <Github className='fill-white hover:fill-[#fcf258] w-8' />
       </a>
     </div>
   )
