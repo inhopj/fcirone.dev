@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
 import classnames from 'classnames'
-import Image from 'next/image'
 import Github from './Icons/Github';
 import Linkedin from './Icons/Linkedin';
 import Mail from './Icons/Mail';
