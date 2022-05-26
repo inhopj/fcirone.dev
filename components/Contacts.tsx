@@ -37,9 +37,13 @@ const Contacts = ({ className: parentClassNames }: Props) => {
           <Linkedin className='' />
         </a>
       </div>
-      {/* TODO - wrap Image in anchor and add mailto */}
       <div className='flex cursor-pointer'>
-        <Mail className='fill-white hover:fill-[#fcf258]'/>
+        {/* TODO - create constants file */}
+        <a
+          href='mailto:fra.cirone@gmail.com'
+        >
+          <Mail className='fill-white hover:fill-[#fcf258]' />
+        </a>
       </div>
     </div>
   )
