@@ -23,7 +23,7 @@ const Contacts = ({ className: parentClassNames }: Props) => {
           target="_blank"
           rel="noopener"
         >
-          <Github className='fill-white w-8' />
+          <Github className='fill-white w-8 hover:fill-[#fcf258]' />
         </a>
       </div>
       <div
@@ -39,7 +39,7 @@ const Contacts = ({ className: parentClassNames }: Props) => {
       </div>
       {/* TODO - wrap Image in anchor and add mailto */}
       <div className='flex cursor-pointer'>
-        <Mail className='fill-white'/>
+        <Mail className='fill-white hover:fill-[#fcf258]'/>
       </div>
     </div>
   )
