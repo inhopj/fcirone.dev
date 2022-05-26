@@ -1,10 +1,10 @@
 import classnames from 'classnames'
 import Card from '../Card/Card'
-import Image from 'next/image'
+import { ReactNode } from 'react';
 
 interface Props {
   className?: string;
-  icon: string;
+  Icon: ReactNode;
   title?: string;
   items: Feed[];
   id: string;
@@ -15,11 +15,9 @@ export interface Feed {
   link: string;
 }
 
-// TODO - cleanup
-// TODO - Add icon
 const Section = ({
   className: parentClassNames,
-  icon,
+  Icon,
   title,
   items,
   id
@@ -32,14 +30,17 @@ const Section = ({
   return (
     <>
       <div className='flex justify-start items-center max-w-2xl w-full md:pl-3 pb-3'>
-        <Image
+        {/* <Image
           className='rounded-lg'
           src={icon}
           alt="logo-icon"
           width={50}
           height={55}
           id={id}
-        />
+        /> */}
+        <span id={id}>
+          {Icon}
+        </span>
         <a>
           <h1
             className="flex text-2xl md:text-3xl text-white pl-2">
