@@ -3,6 +3,7 @@ import classnames from 'classnames'
 import Image from 'next/image'
 import Github from './Icons/Github';
 import Linkedin from './Icons/Linkedin';
+import Mail from './Icons/Mail';
 
 // TODO - centralize this infinitely duplicated interface
 interface Props {
@@ -39,12 +40,7 @@ const Contacts = ({ className: parentClassNames }: Props) => {
       </div>
       {/* TODO - wrap Image in anchor and add mailto */}
       <div className='flex cursor-pointer'>
-        <Image
-          src='/mail.svg'
-          alt="logo-icon"
-          width={35}
-          height={35}
-        />
+        <Mail className='fill-white'/>
       </div>
     </div>
   )
