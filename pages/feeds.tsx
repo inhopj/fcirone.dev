@@ -6,11 +6,11 @@ import Header from '../components/Header/Header'
 import Section from '../components/Feeds/Section'
 // import RSSFeeds from '../components/Feeds/RSSFeeds'
 import Javascript from '../components/Icons/Javascript'
+import Node from '../components/Icons/Node'
 
 // TODO - use margin instead of <br>
 // TODO - Refactor Section component to use children for the section icon
 // TODO - Create icon component for /react.svg
-// TODO - Convert /node.pgn to svg and create icon component
 const Feeds: NextPage = () => {
   
   const { javascript, node, react } = feeds
@@ -40,6 +40,12 @@ const Feeds: NextPage = () => {
         />
         <br />
         <br />
+
+        <Section
+          Icon={<Node className='w-14 h-14 ml-1'/>}
+          id='node'
+          items={node}
+        />
 
         {/* <Section
           icon='/node.png'
