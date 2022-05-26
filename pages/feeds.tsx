@@ -4,17 +4,22 @@ import feeds from '../public/feeds.json'
 import Image from 'next/image'
 import Header from '../components/Header/Header'
 import Section from '../components/Feeds/Section'
+// import RSSFeeds from '../components/Feeds/RSSFeeds'
+import Javascript from '../components/Icons/Javascript'
 
-// TODO
-// use margin instead of <br>
-// reafactor Section component to use children for the section icon
+// TODO - use margin instead of <br>
+// TODO - Refactor Section component to use children for the section icon
+// TODO - Create icon component for /react.svg
+// TODO - Convert /node.pgn to svg and create icon component
 const Feeds: NextPage = () => {
-
+  
   const { javascript, node, react } = feeds
-
+  
   return (
     <>
       <Head>
+        {/* TODO - update with proper info for title and content */}
+        {/* TODO - find appropriate favicon(feeds related) */}
         <title>Personal Web Page</title>
         <meta name="description" content="xFeeds page" charSet="UTF-8" />
         <link rel="icon" href="/favicon.ico" />
@@ -23,23 +28,20 @@ const Feeds: NextPage = () => {
       {/* CONTAINER */}
       <div className='flex flex-col min-h-screen justify-start items-center p-4 md:p-8 bg-zinc-900'
       >
-        <Header className='' />
+        <Header className='mb-9' />
         <br />
-
         <div className='flex justify-start items-center max-w-2xl w-full md:pl-3 pb-6 text-white text-xl'>
           Monthly updated (more or less xD)
         </div>
-
-
         <Section
-          icon='/javascript.svg'
+          Icon={<Javascript className='w-12 rounded-lg'/>}
           id='javascript'
           items={javascript}
         />
         <br />
         <br />
 
-        <Section
+        {/* <Section
           icon='/node.png'
           id='node'
           title='Node'
@@ -53,9 +55,11 @@ const Feeds: NextPage = () => {
           id='react'
           title='React'
           items={react}
-        />
+          className='mb-8'
+        /> */}
+        {/* <RSSFeeds className='md:pl-3' /> */}
 
-        {/* TODO - Create component */}
+        {/* TODO - Create component FLOATING-GUY */}
         <div className='flex flex-col fixed bottom-5 right-5 md:bottom-10 md:right-10'>
           <a href="#javascript" className='flex mb-4 md:mb-3'>
             <Image
@@ -85,7 +89,6 @@ const Feeds: NextPage = () => {
             />
           </a>
         </div>
-
       </div>
     </>
   )
