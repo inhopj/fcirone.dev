@@ -8,7 +8,7 @@ import Section from '../components/Feeds/Section'
 import Javascript from '../components/Icons/Javascript'
 import Node from '../components/Icons/Node'
 import React from '../components/Icons/React'
-// import Nodejs from '../components/Icons/Nodejs'
+import Nodejs from '../components/Icons/Nodejs'
 
 // TODO - use margin instead of <br>
 const Feeds: NextPage = () => {
@@ -68,13 +68,7 @@ const Feeds: NextPage = () => {
             <Javascript className='w-9 rounded-lg' />
           </a>
           <a href="#node" className='flex mb-3'>
-            <Image
-              className='rounded-lg'
-              src={'/node.png'}
-              alt="logo-icon"
-              width={35}
-              height={40}
-            />
+            <Nodejs className='w-10'/>
           </a>
           <a href="#react" className='flex'>
             <Image
