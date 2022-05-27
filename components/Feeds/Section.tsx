@@ -26,20 +26,18 @@ const Section = ({
   }
 
   return (
-    <>
-      <div className='flex justify-start items-center max-w-2xl w-full md:pl-3 pb-3'>
+    <div
+      className={classnames('flex-col md:pl-3', parentClassNames)}
+    >
+      <div className='flex justify-start pb-3'>
         <span id={id}>
           {Icon}
         </span>
       </div>
 
       <div
-        className={classnames(
-          'flex flex-col max-w-2xl w-full md:pl-3',
-          parentClassNames
-        )}
+        className='flex flex-col'
       >
-
         {items.map((item, index) => {
           const last = index === items.length - 1
           const { title, link } = item
@@ -67,7 +65,7 @@ const Section = ({
           )
         })}
       </div>
-    </>
+    </div>
   )
 }
 
