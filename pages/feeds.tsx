@@ -27,33 +27,25 @@ const Feeds: NextPage = () => {
       {/* CONTAINER */}
       <div className='flex flex-col min-h-screen justify-start items-center p-4 md:p-8 bg-zinc-900'
       >
-        <Header className='mb-9' />
-        <br />
-        <div className='flex justify-start items-center max-w-2xl w-full md:pl-3 pb-6 text-white text-xl'>
-          Monthly updated (more or less xD)
-        </div>
+        <Header className='mb-12' />
         <Section
           Icon={<Javascript className='w-12 rounded-lg' />}
           id='javascript'
           items={javascript}
+          className='mb-12'
         />
-        <br />
-        <br />
 
         <Section
           Icon={<Node className='w-14 h-14 ml-1' />}
           id='node'
           items={node}
+          className='mb-12'
         />
-
-        <br />
-        <br />
 
         <Section
           Icon={<React className='w-12' />}
           id='react'
           items={react}
-          className='mb-8'
         />
 
         {/* TODO - Create component FLOATING-GUY */}
