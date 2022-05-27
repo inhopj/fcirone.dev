@@ -8,25 +8,18 @@ interface Props {
 const RSSFeeds = ({ className: parentClassNames }: Props) => {
   return (
     <div
-      className={classnames(
-        'flex flex-col max-w-2xl w-full',
-        parentClassNames
-      )}
-    >
-      <div className='pt-8 flex justify-center text-white text-sm cursor-pointer border-t border-zinc-400'>
-
-        <div
-          className="pr-2"
-        >
-          rss
-        </div>
-        <Image
-          src="/rss-feed-logo.svg"
-          alt="rss-feed-logo"
-          width={15}
-          height={15}
-        />
+      className='pt-4 flex justify-center text-white text-base cursor-pointer'>
+      <div
+        className="pr-2"
+      >
+        rss
       </div>
+      <Image
+        src="/rss-feed-logo.svg"
+        alt="rss-feed-logo"
+        width={15}
+        height={15}
+      />
     </div>
   )
 }
