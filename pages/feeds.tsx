@@ -65,13 +65,7 @@ const Feeds: NextPage = () => {
             href="#javascript"
             className='flex mb-4 md:mb-3'
           >
-            <Image
-              className='rounded-lg'
-              src={'/javascript.svg'}
-              alt="logo-icon"
-              width={35}
-              height={35}
-            />
+            <Javascript className='w-9 rounded-lg' />
           </a>
           <a href="#node" className='flex mb-3'>
             <Image
