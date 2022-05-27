@@ -27,7 +27,7 @@ const Feeds: NextPage = () => {
       <div className='flex flex-col min-h-screen justify-between items-center p-4 md:p-8 bg-zinc-900'
       >
         <div
-          className='flex flex-col items-stretch max-w-2xl w-full'
+          className='flex flex-col items-stretch max-w-2xl w-full mb-6'
         >
           <Header className='mb-12' />
           <Section
