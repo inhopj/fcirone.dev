@@ -5,7 +5,6 @@ import { ReactNode } from 'react';
 interface Props {
   className?: string;
   Icon: ReactNode;
-  title?: string;
   items: Feed[];
   id: string;
 }
@@ -18,7 +17,6 @@ export interface Feed {
 const Section = ({
   className: parentClassNames,
   Icon,
-  title,
   items,
   id
 }: Props) => {
@@ -33,12 +31,6 @@ const Section = ({
         <span id={id}>
           {Icon}
         </span>
-        <a>
-          <h1
-            className="flex text-2xl md:text-3xl text-white pl-2">
-            {title}
-          </h1>
-        </a>
       </div>
 
       <div
