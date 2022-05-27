@@ -30,14 +30,6 @@ const Section = ({
   return (
     <>
       <div className='flex justify-start items-center max-w-2xl w-full md:pl-3 pb-3'>
-        {/* <Image
-          className='rounded-lg'
-          src={icon}
-          alt="logo-icon"
-          width={50}
-          height={55}
-          id={id}
-        /> */}
         <span id={id}>
           {Icon}
         </span>
