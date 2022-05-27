@@ -9,7 +9,6 @@ import Node from '../components/Icons/Node'
 import React from '../components/Icons/React'
 import Nodejs from '../components/Icons/Nodejs'
 
-// TODO - use margin instead of <br>
 const Feeds: NextPage = () => {
 
   const { javascript, node, react } = feeds
