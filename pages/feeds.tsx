@@ -71,13 +71,7 @@ const Feeds: NextPage = () => {
             <Nodejs className='w-10'/>
           </a>
           <a href="#react" className='flex'>
-            <Image
-              className='rounded-lg'
-              src={'/react.svg'}
-              alt="logo-icon"
-              width={35}
-              height={35}
-            />
+            <React className='w-9' />
           </a>
         </div>
       </div>
