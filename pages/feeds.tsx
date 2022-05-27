@@ -52,11 +52,11 @@ const Feeds: NextPage = () => {
 
         </div>
 
-        {/* <div
+        <div
           className='flex flex-col max-w-2xl w-full'
         >
           <RSSFeeds className='md:pl-3' />
-        </div> */}
+        </div>
         
         {/* <div
           className='flex flex-col items-center fixed bottom-5 right-5 md:bottom-10 md:right-10'
