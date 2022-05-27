@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import feeds from '../public/feeds.json'
-import Image from 'next/image'
 import Header from '../components/Header/Header'
 import Section from '../components/Feeds/Section'
 // import RSSFeeds from '../components/Feeds/RSSFeeds'
@@ -12,9 +11,9 @@ import Nodejs from '../components/Icons/Nodejs'
 
 // TODO - use margin instead of <br>
 const Feeds: NextPage = () => {
-  
+
   const { javascript, node, react } = feeds
-  
+
   return (
     <>
       <Head>
@@ -34,7 +33,7 @@ const Feeds: NextPage = () => {
           Monthly updated (more or less xD)
         </div>
         <Section
-          Icon={<Javascript className='w-12 rounded-lg'/>}
+          Icon={<Javascript className='w-12 rounded-lg' />}
           id='javascript'
           items={javascript}
         />
@@ -42,7 +41,7 @@ const Feeds: NextPage = () => {
         <br />
 
         <Section
-          Icon={<Node className='w-14 h-14 ml-1'/>}
+          Icon={<Node className='w-14 h-14 ml-1' />}
           id='node'
           items={node}
         />
@@ -67,10 +66,16 @@ const Feeds: NextPage = () => {
           >
             <Javascript className='w-9 rounded-lg' />
           </a>
-          <a href="#node" className='flex mb-3'>
-            <Nodejs className='w-10'/>
+          <a
+            href="#node"
+            className='flex mb-3'
+          >
+            <Nodejs className='w-10' />
           </a>
-          <a href="#react" className='flex'>
+          <a
+            href="#react"
+            className='flex'
+          >
             <React className='w-9' />
           </a>
         </div>
