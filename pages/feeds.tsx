@@ -24,7 +24,6 @@ const Feeds: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* CONTAINER */}
       <div className='flex flex-col min-h-screen justify-between items-center p-4 md:p-8 bg-zinc-900'
       >
         <div
@@ -37,28 +36,23 @@ const Feeds: NextPage = () => {
             items={javascript}
             className='mb-12'
           />
-
           <Section
             Icon={<Node className='w-14 h-14 ml-1' />}
             id='node'
             items={node}
             className='mb-12'
           />
-
           <Section
             Icon={<React className='w-12' />}
             id='react'
             items={react}
           />
-
         </div>
-
         <div
           className='flex flex-col max-w-2xl w-full'
         >
           <RSSFeeds className='md:pl-3' />
         </div>
-
       </div>
       <FloatingGuy />
     </>
