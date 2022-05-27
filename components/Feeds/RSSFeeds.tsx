@@ -14,6 +14,8 @@ const RSSFeeds = ({ className: parentClassNames }: Props) => {
       >
         rss
       </div>
+      {/* TODO - create component */}
+      {/* TODO - consider adding some effect (e.g. hover) */}
       <Image
         src="/rss-feed-logo.svg"
         alt="rss-feed-logo"
