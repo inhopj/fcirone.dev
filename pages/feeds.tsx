@@ -7,10 +7,10 @@ import Section from '../components/Feeds/Section'
 // import RSSFeeds from '../components/Feeds/RSSFeeds'
 import Javascript from '../components/Icons/Javascript'
 import Node from '../components/Icons/Node'
+import React from '../components/Icons/React'
+// import Nodejs from '../components/Icons/Nodejs'
 
 // TODO - use margin instead of <br>
-// TODO - Refactor Section component to use children for the section icon
-// TODO - Create icon component for /react.svg
 const Feeds: NextPage = () => {
   
   const { javascript, node, react } = feeds
@@ -47,27 +47,24 @@ const Feeds: NextPage = () => {
           items={node}
         />
 
-        {/* <Section
-          icon='/node.png'
-          id='node'
-          title='Node'
-          items={node}
-        />
         <br />
         <br />
 
         <Section
-          icon='/react.svg'
+          Icon={<React className='w-12' />}
           id='react'
-          title='React'
           items={react}
           className='mb-8'
-        /> */}
-        {/* <RSSFeeds className='md:pl-3' /> */}
+        />
 
         {/* TODO - Create component FLOATING-GUY */}
-        <div className='flex flex-col fixed bottom-5 right-5 md:bottom-10 md:right-10'>
-          <a href="#javascript" className='flex mb-4 md:mb-3'>
+        <div
+          className='flex flex-col items-center fixed bottom-5 right-5 md:bottom-10 md:right-10'
+        >
+          <a
+            href="#javascript"
+            className='flex mb-4 md:mb-3'
+          >
             <Image
               className='rounded-lg'
               src={'/javascript.svg'}
