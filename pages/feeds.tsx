@@ -8,6 +8,7 @@ import Javascript from '../components/Icons/Javascript'
 import Node from '../components/Icons/Node'
 import React from '../components/Icons/React'
 import Nodejs from '../components/Icons/Nodejs'
+import FloatingGuy from '../components/FloatingGuy'
 
 const Feeds: NextPage = () => {
 
@@ -57,32 +58,9 @@ const Feeds: NextPage = () => {
         >
           <RSSFeeds className='md:pl-3' />
         </div>
-        
-        {/* <div
-          className='flex flex-col items-center fixed bottom-5 right-5 md:bottom-10 md:right-10'
-        >
-          <a
-            href="#javascript"
-            className='flex mb-4 md:mb-3'
-          >
-            <Javascript className='w-9 rounded-lg' />
-          </a>
-          <a
-            href="#node"
-            className='flex mb-3'
-          >
-            <Nodejs className='w-10' />
-          </a>
-          <a
-            href="#react"
-            className='flex'
-          >
-            <React className='w-9' />
-          </a>
-        </div> */}
 
       </div>
-
+      <FloatingGuy />
     </>
   )
 }
