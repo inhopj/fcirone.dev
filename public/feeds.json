@@ -65,40 +65,40 @@
   ],
   "react": [
     {
-      "title": "react 1",
-      "link": "http://someRandomUrldwfreREACT"
+      "title": "The RFC for useEvent, the new Fundamental React Hook",
+      "link": "https://github.com/reactjs/rfcs/blob/useevent/text/0000-useevent.md"
     },
     {
-      "title": "react 1",
-      "link": "http://someRandomUrldwfreREACT"
+      "title": "What the useEvent React hook is (and isn't)",
+      "link": "https://typeofnan.dev/what-the-useevent-react-hook-is-and-isnt/"
     },
     {
-      "title": "react 1",
-      "link": "http://someRandomUrldwfreREACT"
+      "title": "Next.js's Layouts RFC: Big Changes Ahead for Next.js",
+      "link": "https://nextjs.org/blog/layouts-rfc"
     },
     {
-      "title": "react 1",
-      "link": "http://someRandomUrldwfreREACT"
+      "title": "Remotion 3.0: 'Write videos in React'",
+      "link": "https://www.remotion.dev/blog/3-0"
     },
     {
-      "title": "react 1",
-      "link": "http://someRandomUrldwfreREACT"
+      "title": "Improve Developer experience across React and React Native with tailwind-react-native and Legend Motion",
+      "link": "https://legendapp.com/dev/react-and-native/"
     },
     {
-      "title": "react 1",
-      "link": "http://someRandomUrldwfreREACT"
+      "title": "Building Command-Line Apps Using React Ink",
+      "link": "https://blog.openreplay.com/building-command-line-apps-using-react-ink"
     },
     {
-      "title": "react 1",
-      "link": "http://someRandomUrldwfreREACT"
+      "title": "daisyUI: the most popular, free and open-source Tailwind CSS component library",
+      "link": "https://daisyui.com/"
     },
     {
-      "title": "react 1",
-      "link": "http://someRandomUrldwfreREACT"
+      "title": "React Component Composition Explained",
+      "link": "https://felixgerschau.com/react-component-composition/"
     },
     {
-      "title": "react 1",
-      "link": "http://someRandomUrldwfreREACT"
+      "title": "Plyr React 4.0: A Responsive Media Player React Component",
+      "link": "https://plyr-react.js.org/"
     }
   ]
 }
