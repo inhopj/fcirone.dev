@@ -17,11 +17,9 @@ const Feeds: NextPage = () => {
   return (
     <>
       <Head>
-        {/* TODO - update with proper info for title and content */}
-        {/* TODO - find appropriate favicon(feeds related) */}
-        <title>Personal Web Page</title>
-        <meta name="description" content="xFeeds page" charSet="UTF-8" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Feeds Page</title>
+        <meta name="description" content="Feeds page" charSet="UTF-8" />
+        <link rel="icon" href="/rss-feed-logo.svg" />
       </Head>
 
       <div className='flex flex-col min-h-screen justify-between items-center p-4 md:p-8 bg-zinc-900'
