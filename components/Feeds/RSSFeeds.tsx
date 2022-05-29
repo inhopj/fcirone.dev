@@ -15,8 +15,8 @@ const RSSFeeds = () => {
       <Image
         src="/rss-feed.svg"
         alt="rss-feed"
-        width={15}
-        height={15}
+        width={20}
+        height={20}
       />
     </div>
   )
