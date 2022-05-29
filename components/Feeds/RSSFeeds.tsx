@@ -1,11 +1,6 @@
-import classnames from 'classnames'
 import Image from 'next/image'
 
-interface Props {
-  className?: string;
-}
-
-const RSSFeeds = ({ className: parentClassNames }: Props) => {
+const RSSFeeds = () => {
   return (
     <div
       className='flex justify-center text-white text-base cursor-pointer'>

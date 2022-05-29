@@ -49,7 +49,7 @@ const Feeds: NextPage = () => {
         <div
           className='flex flex-col max-w-2xl w-full'
         >
-          <RSSFeeds className='md:pl-3' />
+          <RSSFeeds />
         </div>
       </div>
       <FloatingGuy />
