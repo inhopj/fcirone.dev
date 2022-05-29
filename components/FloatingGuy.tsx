@@ -1,10 +1,15 @@
 import Javascript from './Icons/Javascript';
 import Nodejs from './Icons/Nodejs';
 import React from '../components/Icons/React'
-import { useState } from 'react';
-import Anchor from './Link/Anchor';
+import { ReactNode, useState } from 'react';
 import classnames from 'classnames';
 import Image from 'next/image';
+
+interface Anchor {
+  href: string;
+  icon: ReactNode;
+  parentClassNames: string;
+}
 
 const anchors = [
   {
