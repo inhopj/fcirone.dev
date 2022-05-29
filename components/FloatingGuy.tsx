@@ -44,9 +44,14 @@ const FloatingGuy = () => {
       {anchors.map(({ href, icon, parentClassNames }, index) => {
         return (
           <div
+            // TODO - use classname also for transitionDelay
+            style={{ transitionDelay: `${index * 50}ms` }}
             key={href}
             className={classnames(
-              parentClassNames
+              parentClassNames,
+              "flex transition-all duration-300",
+              { "translate-y-10 scale-0 opacity-0": !toggle },
+              { "opacity-1 translate-y-0 scale-1": toggle }
             )}
           >
             <a
