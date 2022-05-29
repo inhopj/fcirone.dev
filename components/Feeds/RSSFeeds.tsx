@@ -6,6 +6,7 @@ const RSSFeeds = () => {
       className='flex justify-center text-white text-base cursor-pointer'>
       <div
         className="pr-2"
+        id="rss"
       >
         rss
       </div>
