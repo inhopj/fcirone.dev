@@ -19,7 +19,7 @@ const Feeds: NextPage = () => {
       <Head>
         <title>Feeds Page</title>
         <meta name="description" content="Feeds page" charSet="UTF-8" />
-        <link rel="icon" href="/rss-feed-logo.svg" />
+        <link rel="icon" href="/rss-feed.svg" />
       </Head>
 
       <div className='flex flex-col min-h-screen justify-between items-center p-4 md:p-8 bg-zinc-900'
