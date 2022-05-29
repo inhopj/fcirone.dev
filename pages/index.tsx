@@ -6,6 +6,7 @@ import About from '../components/About/About'
 import Credits from '../components/Credits/Credits'
 import Contacts from '../components/Contacts'
 
+// TODO - refactor as for feeds page refactor (commit 623566a)
 const Home: NextPage = () => {
   return (
     <>
