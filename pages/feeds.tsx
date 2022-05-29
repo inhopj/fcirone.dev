@@ -17,7 +17,8 @@ const Feeds: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Feeds Page</title>
+        {/* TODO - uniform page titles */}
+        <title>fcirone - Feeds</title>
         <meta name="description" content="Feeds page" charSet="UTF-8" />
         <link rel="icon" href="/rss-feed.svg" />
       </Head>
