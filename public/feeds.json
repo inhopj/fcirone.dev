@@ -35,33 +35,42 @@
   ],
   "node": [
     {
-      "title": "node 1",
-      "link": "http://someRandomUrlNODE"
+      "title": "The Thing about Fastify",
+      "link": "https://hire.jonasgalvez.com.br/2022/may/02/the-thing-about-fastify/"
     },
     {
-      "title": "node 1",
-      "link": "http://someRandomUrlNODE"
+      "title": "Fetch API available in Node - still not stable but you should really care, and not just bc it's based on Undici =)",
+      "link": "https://blog.logrocket.com/fetch-api-node-js/"
     },
     {
-      "title": "node 1",
-      "link": "http://someRandomUrlNODE"
+      "title": "Payload - a Node-Based Headless CMS, Now Fully Open Source (built on top of Express.js, MongoDB, and React)",
+      "link": "https://payloadcms.com/blog/open-source"
     },
     {
-      "title": "node 1",
-      "link": "http://someRandomUrlNODE"
+      "title": "CSV Parse - Convert CSV Formatted Text into Arrays of Objects (Node.js transform stream api under the hood)",
+      "link": "https://csv.js.org/parse/"
     },
     {
-      "title": "node 1",
-      "link": "http://someRandomUrlNODE"
+      "title": "Managing OAuth 2.0 User Credentials in Your Node App",
+      "link": "https://fusebit.io/blog/manage-oauth-user-creds/"
     },
     {
-      "title": "node 1",
-      "link": "http://someRandomUrlNODE"
+      "title": "Best Practices for Working with Different Filesystems",
+      "link": "https://nodejs.org/en/docs/guides/working-with-different-filesystems/"
     },
     {
-      "title": "node 1",
-      "link": "http://someRandomUrlNODE"
+      "title": "capture-website 2.4 — A high-level Puppeteer wrapper to make it easy to capture screenshots of websites from Node or the command-line.",
+      "link": "https://github.com/sindresorhus/capture-website"
+    },
+    {
+      "title": "pkg - Package Your Node Project Into an Executable (adds Node 18 support with v5.7.0)",
+      "link": "https://github.com/vercel/pkg"
+    },
+    {
+      "title": "Creating and deploying a tiny proxy server on Vercel in 10 minutes",
+      "link": "https://mmazzarolo.com/blog/2022-02-05-creating-and-deploying-a-proxy-server-in-5-minutes/"
     }
+
   ],
   "react": [
     {
