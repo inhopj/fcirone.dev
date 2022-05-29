@@ -11,6 +11,7 @@ const RSSFeeds = ({ className: parentClassNames }: Props) => {
       className='pt-4 flex justify-center text-white text-base cursor-pointer'>
       <div
         className="pr-2"
+        id="rss"
       >
         rss
       </div>
