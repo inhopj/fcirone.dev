@@ -7,6 +7,16 @@ import classnames from 'classnames';
 import Image from 'next/image';
 
 const anchors = [
+  {
+    href: '#rss',
+    icon: <Image
+      src="/rss-feed.svg"
+      alt="rss-feed"
+      width={26}
+      height={26}
+    />,
+    parentClassNames: "flex mb-4 md:mb-3"
+  },
   { href: '#react', icon: <React className='w-8' />, parentClassNames: "flex mb-4" },
   { href: '#node', icon: <Nodejs className='w-9' />, parentClassNames: "flex mb-4" },
   { href: '#javascript', icon: <Javascript className='w-8 rounded-lg' />, parentClassNames: "flex mb-4" },
