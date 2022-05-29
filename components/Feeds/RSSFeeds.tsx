@@ -13,8 +13,8 @@ const RSSFeeds = () => {
       {/* TODO - create component */}
       {/* TODO - consider adding some effect (e.g. hover) */}
       <Image
-        src="/rss-feed-logo.svg"
-        alt="rss-feed-logo"
+        src="/rss-feed.svg"
+        alt="rss-feed"
         width={15}
         height={15}
       />
