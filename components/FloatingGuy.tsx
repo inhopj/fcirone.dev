@@ -11,7 +11,7 @@ interface Anchor {
   parentClassNames: string;
 }
 
-const anchors = [
+const anchors: Anchor[] = [
   {
     href: '#rss',
     icon: <Image
