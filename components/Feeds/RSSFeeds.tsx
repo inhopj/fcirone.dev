@@ -2,7 +2,9 @@ import Image from 'next/image'
 
 const RSSFeeds = () => {
   return (
-    <div
+    <a
+      target='_blank'
+      href="/rss.xml"
       className='flex justify-center text-white text-base cursor-pointer'>
       <div
         className="pr-2"
@@ -18,7 +20,7 @@ const RSSFeeds = () => {
         width={20}
         height={20}
       />
-    </div>
+    </a>
   )
 }
 
