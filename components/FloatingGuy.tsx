@@ -17,7 +17,7 @@ const FloatingGuy = ({
       className='flex flex-col-reverse items-center fixed bottom-5 right-5 md:bottom-10 md:right-10'
     >
       <div
-        className='flex justify-center items-center w-9 h-9 rounded-lg bg-[#f0db4f] text-lg'
+        className='flex justify-center items-center w-11 h-11 rounded-lg bg-[#f0db4f] text-lg'
         onClick={() => setToggle(!toggle)}
       >
         #
