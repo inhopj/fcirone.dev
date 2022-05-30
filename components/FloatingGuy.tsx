@@ -2,18 +2,14 @@ import React from '../components/Icons/React'
 import { useState } from 'react';
 import classnames from 'classnames';
 import { Anchors } from '../interfaces/interfaces';
-import { useOutsideClick } from '../hooks/useOutsideClick';
 
 const FloatingGuy = ({
   anchors
 }: Anchors) => {
   const [toggle, setToggle] = useState(false);
-  const handleOutsideClick = () => {setToggle(false)}
-  const ref = useOutsideClick(handleOutsideClick)
 
   return (
     <div
-      ref={ref as any}
       className='flex flex-col-reverse items-center fixed bottom-5 right-5 md:bottom-10 md:right-10'
     >
       <div
