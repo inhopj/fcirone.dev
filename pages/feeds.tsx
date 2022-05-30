@@ -9,10 +9,29 @@ import Node from '../components/Icons/Node'
 import React from '../components/Icons/React'
 import Nodejs from '../components/Icons/Nodejs'
 import FloatingGuy from '../components/FloatingGuy'
+import { ReactNode } from 'react'
+import Image from 'next/image';
+import { Anchor } from '../interfaces/interfaces'
 
 const Feeds: NextPage = () => {
 
   const { javascript, node, react } = feeds
+  
+  const anchors: Anchor[] = [
+    {
+      href: '#rss',
+      icon: <Image
+        src="/rss-feed.svg"
+        alt="rss-feed"
+        width={26}
+        height={26}
+      />,
+      parentClassNames: "flex mb-4 md:mb-3"
+    },
+    { href: '#react', icon: <React className='w-8' />, parentClassNames: "flex mb-4" },
+    { href: '#node', icon: <Nodejs className='w-9' />, parentClassNames: "flex mb-4" },
+    { href: '#javascript', icon: <Javascript className='w-8 rounded-lg' />, parentClassNames: "flex mb-4" },
+  ]
 
   return (
     <>
@@ -53,7 +72,7 @@ const Feeds: NextPage = () => {
           <RSSFeeds />
         </div>
       </div>
-      <FloatingGuy />
+      <FloatingGuy anchors={anchors}/>
     </>
   )
 }
