@@ -1,20 +1,13 @@
 import React from 'react';
 import classnames from 'classnames';
-
-export interface Props {
-  className?: string;
-  centerText?: boolean;
-  title?: string;
-  subtitle?: string;
-  href?: string;
-}
+import { Card } from '../../interfaces/interfaces';
 
 const Card = ({
   className: parentClassNames,
   centerText = false,
   title,
   subtitle,
-}: Props) => {
+}: Card) => {
 
   return (
     <div

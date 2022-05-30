@@ -9,3 +9,11 @@ export interface Anchor {
 export interface Anchors {
   anchors: Anchor[]
 }
+
+export interface Card {
+  className?: string;
+  centerText?: boolean;
+  title?: string;
+  subtitle?: string;
+  href?: string;
+}
