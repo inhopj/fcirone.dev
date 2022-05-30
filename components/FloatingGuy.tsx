@@ -4,31 +4,11 @@ import React from '../components/Icons/React'
 import { ReactNode, useState } from 'react';
 import classnames from 'classnames';
 import Image from 'next/image';
+import { Anchors } from '../interfaces/interfaces';
 
-interface Anchor {
-  href: string;
-  icon: ReactNode;
-  parentClassNames: string;
-}
-
-const anchors: Anchor[] = [
-  {
-    href: '#rss',
-    icon: <Image
-      src="/rss-feed.svg"
-      alt="rss-feed"
-      width={26}
-      height={26}
-    />,
-    parentClassNames: "flex mb-4 md:mb-3"
-  },
-  { href: '#react', icon: <React className='w-8' />, parentClassNames: "flex mb-4" },
-  { href: '#node', icon: <Nodejs className='w-9' />, parentClassNames: "flex mb-4" },
-  { href: '#javascript', icon: <Javascript className='w-8 rounded-lg' />, parentClassNames: "flex mb-4" },
-]
-
-
-const FloatingGuy = () => {
+const FloatingGuy = ({
+  anchors
+}: Anchors) => {
   const [toggle, setToggle] = useState(false);
 
   return (
