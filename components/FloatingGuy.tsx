@@ -1,9 +1,6 @@
-import Javascript from './Icons/Javascript';
-import Nodejs from './Icons/Nodejs';
 import React from '../components/Icons/React'
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 import classnames from 'classnames';
-import Image from 'next/image';
 import { Anchors } from '../interfaces/interfaces';
 
 const FloatingGuy = ({
