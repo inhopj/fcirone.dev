@@ -1,5 +1,5 @@
 import React from '../components/Icons/React'
-import { MutableRefObject, useState } from 'react';
+import { useState } from 'react';
 import classnames from 'classnames';
 import { Anchors } from '../interfaces/interfaces';
 import { useOutsideClick } from '../hooks/useOutsideClick';
