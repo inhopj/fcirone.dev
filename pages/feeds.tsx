@@ -9,7 +9,6 @@ import Node from '../components/Icons/Node'
 import React from '../components/Icons/React'
 import Nodejs from '../components/Icons/Nodejs'
 import FloatingGuy from '../components/FloatingGuy'
-import { ReactNode } from 'react'
 import Image from 'next/image';
 import { Anchor } from '../interfaces/interfaces'
 
