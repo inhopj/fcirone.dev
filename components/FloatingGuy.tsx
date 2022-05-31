@@ -10,17 +10,17 @@ const FloatingGuy = ({
 
   return (
     <div
-      className='flex flex-col-reverse items-center fixed bottom-5 right-5 md:bottom-10 md:right-10'
+      className='flex flex-col-reverse items-center fixed bottom-5 right-2 md:bottom-10 md:right-10'
     >
       <div
-        className='flex justify-center items-center w-12 h-12 rounded-full bg-[#f0db4f] text-lg font-semibold'
+        className='flex justify-center items-center w-12 h-12 rounded-full bg-[#f0db4f] text-lg font-semibold mt-3'
         onClick={() => setToggle(!toggle)}
       >
         #
       </div>
       {anchors.map(({ href, icon, parentClassNames }, index) => {
         return (
-          <div
+          <a
             // TODO - use classname also for transitionDelay
             style={{ transitionDelay: `${index * 50}ms` }}
             key={href}
@@ -30,13 +30,10 @@ const FloatingGuy = ({
               { "translate-y-10 scale-0 opacity-0": !toggle },
               { "opacity-1 translate-y-0 scale-1": toggle }
             )}
+            href={href}
           >
-            <a
-              href={href}
-            >
-              {icon}
-            </a>
-          </div>
+            {icon}
+          </a>
         )
       })}
     </div>
