@@ -12,7 +12,7 @@ const Card = ({
   return (
     <div
       className={classnames(
-        'bg-zinc-800 rounded-lg p-3',
+        'bg-zinc-800 rounded-lg pr-12 p-3',
         parentClassNames
       )}
     >
