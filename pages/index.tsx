@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <div
         className='flex flex-col min-h-screen justify-between p-4 md:p-8 bg-zinc-900'
       >
-        <div className='flex flex-col justify-start items-center mb-8'>
+        <div className='flex flex-col justify-start items-center mb-10'>
           <Header className='mb-9' />
           <Hero className='mb-9' />
           <About className='' />

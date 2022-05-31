@@ -6,10 +6,7 @@ interface Props {
 
 const Bio = ({ className: parentClassNames }: Props) => {
   return (
-    <div className={classnames(
-      'pb-4',
-      parentClassNames
-    )}>
+    <div className={classnames(parentClassNames)}>
       <div className='text-white text-xl md:text-2xl'>
         Bio
       </div>

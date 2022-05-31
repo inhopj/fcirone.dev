@@ -19,7 +19,7 @@ const About = ({ className: parentClassNames }: Props) => {
       <div className='flex flex-col justify-start text-zinc-400'>
         <Work className='mb-6' />
         <Tech className='mb-6' />
-        <Bio className='mb-6' />
+        <Bio className='' />
       </div>
     </div>
   )
