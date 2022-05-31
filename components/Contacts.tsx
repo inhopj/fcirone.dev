@@ -17,34 +17,29 @@ const Contacts = ({ className: parentClassNames }: Props) => {
         parentClassNames
       )}
     >
-      <div className='flex mr-4 cursor-pointer'>
         <a
           href='https://github.com/inhopj'
           target="_blank"
           rel="noopener"
+          className='flex cursor-pointer p-3'
         >
-          <Github className='fill-white w-8 hover:fill-[#fcf258]' />
+          <Github className='fill-white w-10 hover:fill-[#fcf258]' />
         </a>
-      </div>
-      <div
-        className='flex mr-4 cursor-pointer'
-      >
         <a
           href='https://linkedin.com/in/fcirone'
           target="_blank"
           rel="noopener"
+          className='flex cursor-pointer p-3'
         >
           <Linkedin className='' />
         </a>
-      </div>
-      <div className='flex cursor-pointer'>
         {/* TODO - create constants file */}
         <a
           href='mailto:fra.cirone@gmail.com'
+          className='flex cursor-pointer p-3'
         >
           <Mail className='fill-white hover:fill-[#fcf258]' />
         </a>
-      </div>
     </div>
   )
 }
