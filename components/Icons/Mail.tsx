@@ -9,8 +9,8 @@ const Mail = ({ className: parentClassNames }: Props) => {
     <svg
       className={classNames(parentClassNames)}
       xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="34"
+      width="36"
+      height="40"
       viewBox="0 0 14 16"
     >
       <path
