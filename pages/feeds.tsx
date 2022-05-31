@@ -22,14 +22,14 @@ const Feeds: NextPage = () => {
       icon: <Image
         src="/rss-feed.svg"
         alt="rss-feed"
-        width={26}
-        height={26}
+        width={30}
+        height={30}
       />,
-      parentClassNames: "flex mb-4 md:mb-3"
+      parentClassNames: "p-3"
     },
-    { href: '#react', icon: <React className='w-8' />, parentClassNames: "flex mb-4" },
-    { href: '#node', icon: <Nodejs className='w-9' />, parentClassNames: "flex mb-4" },
-    { href: '#javascript', icon: <Javascript className='w-8 rounded-lg' />, parentClassNames: "flex mb-4" },
+    { href: '#react', icon: <React className='w-9' />, parentClassNames: "p-3" },
+    { href: '#node', icon: <Nodejs className='w-10' />, parentClassNames: "p-3" },
+    { href: '#javascript', icon: <Javascript className='w-9 rounded-lg' />, parentClassNames: "p-3" },
   ]
 
   return (
@@ -43,7 +43,7 @@ const Feeds: NextPage = () => {
       <div className='flex flex-col min-h-screen justify-between items-center p-4 md:p-8 bg-zinc-900'
       >
         <div
-          className='flex flex-col items-stretch max-w-2xl w-full mb-6'
+          className='flex flex-col items-stretch max-w-2xl w-full mb-4'
         >
           <Header className='mb-12' />
           <Section
@@ -65,7 +65,7 @@ const Feeds: NextPage = () => {
           />
         </div>
         <div
-          className='flex flex-col max-w-2xl w-full'
+          className='flex flex-col max-w-2xl w-full p-4'
         >
           <RSSFeeds />
         </div>
