@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 const RSSFeeds = () => {
   return (
+    // TODO - verify how much area is clickable (probably too much)
     <a
       target='_blank'
       href="/rss.xml"
