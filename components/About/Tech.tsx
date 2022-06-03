@@ -15,7 +15,7 @@ const Tech = ({ className: parentClassNames }: Props) => {
         build up-to-date web things.<br />
         Check out the Feeds page for a collection<br />
         of interesting news and articles<br />
-        found here and there =)
+        found here and there <span className='text-white font-bold'>=)</span>
       </p>
     </div>
   )
