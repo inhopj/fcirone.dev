@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-target-blank */
 import classnames from 'classnames';
 
 interface Props {
