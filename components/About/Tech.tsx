@@ -10,7 +10,7 @@ const Tech = ({ className: parentClassNames }: Props) => {
       <p className='text-white text-xl md:text-2xl'>
         Tech
       </p>
-      <p>
+      <p className="text-zinc-400">
         I love using Node and React to<br />
         build up-to-date web things.<br />
         Check out the Feeds page for a collection<br />
