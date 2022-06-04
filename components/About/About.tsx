@@ -1,7 +1,7 @@
 import classnames from 'classnames'
 import Bio from './Bio'
 import Tech from './Tech'
-import Work from './Work'
+import Experience from './Experience'
 
 // TODO - centralize this infinitely duplicated interface
 interface Props {
@@ -17,7 +17,7 @@ const About = ({ className: parentClassNames }: Props) => {
       )}
     >
       <div className='flex flex-col justify-start'>
-        <Work className='mb-6' />
+        <Experience className='mb-6' />
         <Tech className='mb-6' />
         <Bio className='' />
       </div>
