@@ -49,12 +49,10 @@ const Credits = ({ className: parentClassNames }: Props) => {
           />
         </div>
         <div className='flex items-center align-center p-2 px-4'>
-          <Triangle size={24} color="#ffffff" weight="fill" className='hover:red'/>
-          {/* <Vercel className='fill-white w-14' /> */}
+          <Triangle size={24} color="#ffffff" weight="fill" />
         </div>
         <div className='flex items-center align-center p-2 px-4'>
           <PhosphorLogo size={24} color="#ffffff" weight="fill" />
-          {/* <Vercel className='fill-white w-14' /> */}
         </div>
       </div>
     </div>
