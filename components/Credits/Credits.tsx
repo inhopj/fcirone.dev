@@ -18,6 +18,7 @@ const Credits = ({ className: parentClassNames }: Props) => {
         Powered by
       </div>
       <div className='flex justify-center items-center md:mx-4'>
+        {/* TODO - wrap in anchor and add href */}
         <div
           className='flex items-center align-center p-2 px-4'
         >
