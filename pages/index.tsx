@@ -6,7 +6,6 @@ import About from '../components/About/About'
 import Credits from '../components/Credits/Credits'
 import Contacts from '../components/Contacts'
 
-// TODO - refactor as for feeds page refactor (commit 623566a)
 const Home: NextPage = () => {
   return (
     <>
@@ -18,14 +17,14 @@ const Home: NextPage = () => {
       </Head>
       {/* CONTAINER */}
       <div
-        className='flex flex-col min-h-screen justify-between p-4 md:p-8 bg-zinc-900'
+        className='flex flex-col min-h-screen justify-between items-center p-4 md:p-8 bg-zinc-900'
       >
-        <div className='flex flex-col justify-start items-center mb-10'>
+        <div className='flex flex-col items-stretch max-w-2xl w-full mb-6'>
           <Header className='mb-9' />
           <Hero className='mb-9' />
           <About className='' />
         </div>
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-stretch max-w-2xl w-full'>
           <Contacts className='mb-4' />
           <Credits className='' />
         </div>

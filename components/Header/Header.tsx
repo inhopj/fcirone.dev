@@ -14,7 +14,7 @@ const Header = ({ className: parentClassNames }: Props) => {
   return (
     <div
       className={classnames(
-        'flex justify-between items-center max-w-2xl w-full text-lg',
+        'flex justify-between text-lg',
         parentClassNames
       )}
     >
