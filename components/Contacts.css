@@ -13,6 +13,7 @@
   transition-duration: 250ms;
 }
 
+
 /* better scope for at css */
 .at > circle:nth-child(2) {
   opacity: 0;
@@ -21,5 +22,17 @@
 
 .at:hover > circle:nth-child(2) {
   opacity: 0.2;
+  transition-duration: 250ms;
+}
+
+
+/* better scope for at css */
+.github:hover {
+  opacity: 0.6;
+  transition-duration: 250ms;
+}
+
+.github {
+  opacity: 1;
   transition-duration: 250ms;
 }
