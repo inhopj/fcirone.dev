@@ -38,7 +38,7 @@ const Header = ({ className: parentClassNames }: Props) => {
         rel="noopener"
       >
         {/* TODO - increase a bit dimensions */}
-        <Github className='fill-white hover:fill-[#fcf258] w-10' />
+        <Github className='fill-white w-10' />
       </a>
     </div>
   )
