@@ -1,12 +1,12 @@
 /* better scope for linkedin css */
-.linkedin:hover > rect:nth-child(2) {
+.linkedin:hover > svg > rect:nth-child(2) {
   fill: #0b63bc;
   stroke: #0b63bc;
   transition-property: stroke, fill;
   transition-duration: 250ms;
 }
 
-.linkedin > rect:nth-child(2) {
+.linkedin > svg > rect:nth-child(2) {
   fill: transparent;
   stroke: #fff;
   transition-property: stroke, fill;
@@ -14,25 +14,12 @@
 }
 
 
-/* better scope for at css */
-.at > circle:nth-child(2) {
-  opacity: 0;
-  transition-duration: 250ms;
+/* better scope for github css */
+.github:hover > svg {
+  fill: #0a63bc;
+  transition-duration: 200ms;
 }
 
-.at:hover > circle:nth-child(2) {
-  opacity: 0.2;
-  transition-duration: 250ms;
-}
-
-
-/* better scope for at css */
-.github:hover {
-  opacity: 0.6;
-  transition-duration: 250ms;
-}
-
-.github {
-  opacity: 1;
-  transition-duration: 250ms;
+.github > svg {
+  transition-duration: 200ms;
 }

@@ -12,32 +12,49 @@ const Contacts = ({ className: parentClassNames }: Props) => {
   return (
     <div
       className={classnames(
-        'flex justify-center items-center',
+        'flex flex-col justify-start md:px-3',
         parentClassNames
       )}
     >
+
+      <div
+        className='flex justify-start text-white text-xl md:text-2xl md:mb-4 mb-3'
+      >
+        Contacts
+      </div>
+
+
+      <div
+        className='flex mb-2'
+      >
         <a
           href='https://github.com/inhopj'
           target="_blank"
           rel="noopener"
-          className='flex cursor-pointer p-3'
+          className='github inline-flex justify-start items-center cursor-pointer mr-3 hover:text-zinc-400 text-sm text-white transition-all duration-300'
         >
-          <Github className='fill-white w-10 github'/>
+          <Github className='fill-white w-6 ml-0.5 mr-2' />
+          inhopj
         </a>
+      </div>
+      
+      
+      <div
+        className='flex mb-4'
+      > 
+        {/* avoid brutal usage of transition-all just to hover text */}
         <a
           href='https://linkedin.com/in/fcirone'
           target="_blank"
           rel="noopener"
-          className='flex cursor-pointer p-3'
+          className='linkedin inline-flex justify-start items-center cursor-pointer mr-2.5 hover:text-zinc-400 text-sm text-white transition-all duration-300'
         >
-          <LinkedinLogo size={42} color="#ffffff" className='linkedin'/>
+          <LinkedinLogo size={28} color="#ffffff" className='mr-2'/>
+          fcirone
         </a>
-        <a
-          href='mailto:fra.cirone@gmail.com'
-          className='flex cursor-pointer p-3'
-        >
-          <At size={42} color="#ffffff" className='at' weight="duotone"/>
-        </a>
+      </div>
+
+
     </div>
   )
 }
