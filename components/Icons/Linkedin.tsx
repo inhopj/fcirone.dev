@@ -4,6 +4,7 @@ interface Props {
   className?: string;
 }
 
+// TODO - check if unused and remove if so
 const Linkedin = ({ className: parentClassNames }: Props) => {
   return (
     <svg
