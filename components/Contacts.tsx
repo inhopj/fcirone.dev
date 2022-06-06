@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import classnames from 'classnames'
-import { EnvelopeOpen, GitBranch, LinkedinLogo } from 'phosphor-react';
+import { At, LinkedinLogo } from 'phosphor-react';
+import Github from './Icons/Github';
 
 // TODO - centralize this infinitely duplicated interface
 interface Props {
@@ -21,13 +22,13 @@ const Contacts = ({ className: parentClassNames }: Props) => {
           rel="noopener"
           className='flex cursor-pointer p-3'
         >
-          <GitBranch size={42} color="#ffffff" weight="fill"/>
+          <Github className='fill-white w-10' />
         </a>
         <a
           href='mailto:fra.cirone@gmail.com'
           className='flex cursor-pointer p-3'
         >
-          <EnvelopeOpen size={44} color="#ffffff" />
+          <At size={42} color="#ffffff" className='at' weight="duotone"/>
         </a>
         <a
           href='https://linkedin.com/in/fcirone'
@@ -35,7 +36,7 @@ const Contacts = ({ className: parentClassNames }: Props) => {
           rel="noopener"
           className='flex cursor-pointer p-3'
         >
-          <LinkedinLogo size={42} color="#ffffff" />
+          <LinkedinLogo size={42} color="#ffffff" className='linkedin'/>
         </a>
     </div>
   )
