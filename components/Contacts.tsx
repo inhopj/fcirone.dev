@@ -22,7 +22,7 @@ const Contacts = ({ className: parentClassNames }: Props) => {
           rel="noopener"
           className='flex cursor-pointer p-3'
         >
-          <Github className='fill-white w-10' />
+          <Github className='fill-white w-10 github'/>
         </a>
         <a
           href='mailto:fra.cirone@gmail.com'
