@@ -25,18 +25,18 @@ const Contacts = ({ className: parentClassNames }: Props) => {
           <Github className='fill-white w-10 github'/>
         </a>
         <a
-          href='mailto:fra.cirone@gmail.com'
-          className='flex cursor-pointer p-3'
-        >
-          <At size={42} color="#ffffff" className='at' weight="duotone"/>
-        </a>
-        <a
           href='https://linkedin.com/in/fcirone'
           target="_blank"
           rel="noopener"
           className='flex cursor-pointer p-3'
         >
           <LinkedinLogo size={42} color="#ffffff" className='linkedin'/>
+        </a>
+        <a
+          href='mailto:fra.cirone@gmail.com'
+          className='flex cursor-pointer p-3'
+        >
+          <At size={42} color="#ffffff" className='at' weight="duotone"/>
         </a>
     </div>
   )
