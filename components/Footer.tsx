@@ -11,7 +11,6 @@ interface Props {
 const Footer = ({ className: parentClassNames }: Props) => {
   return (
     <>
-
       {/* FIRST ROW */}
       <div
         className={classnames(
@@ -34,7 +33,7 @@ const Footer = ({ className: parentClassNames }: Props) => {
 
       {/* SECOND ROW */}
       <div
-        className='flex max-w-2xl w-full items-center md:mx-4 pt-2'
+        className='flex max-w-2xl w-full items-center md:mx-4 pt-1'
       >
         {/* FIRST COL */}
         <div className='flex flex-col w-full'>
@@ -78,15 +77,14 @@ const Footer = ({ className: parentClassNames }: Props) => {
               />
             </a>
             <a className='flex items-baseline px-2'>
-              <Triangle size={28} color="#ffffff" weight="fill" />
+              <Triangle size={27} color="#ffffff" weight="fill" />
             </a>
             <a className='flex items-center px-2'>
-              <PhosphorLogo size={28} color="#ffffff" weight="fill" />
+              <PhosphorLogo size={27} color="#ffffff" weight="fill" />
             </a>
           </div>
         </div>
       </div>
-      
     </>
   )
 }
