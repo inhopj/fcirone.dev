@@ -8,7 +8,7 @@ const Bio = ({ className: parentClassNames }: Props) => {
   return (
     <div className={classnames(parentClassNames)}>
       <div className='text-white text-xl md:text-2xl'>
-        Bio
+        About
       </div>
       <p className="text-zinc-400">
         Nintendo person!<br />
