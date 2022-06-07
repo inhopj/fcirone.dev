@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import '../components/Contacts.css';
+import '../components/Footer.css';
 
 import type { AppProps } from 'next/app'
 
