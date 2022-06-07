@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import About from '../components/About/About'
 import Credits from '../components/Credits/Credits'
 import Contacts from '../components/Contacts'
+import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -25,8 +26,7 @@ const Home: NextPage = () => {
           <About className='' />
         </div>
         <div className='flex flex-col items-stretch max-w-2xl w-full'>
-          <Contacts className='mb-4' />
-          <Credits className='' />
+          <Footer />
         </div>
       </div>
     </>
