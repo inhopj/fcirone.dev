@@ -20,12 +20,12 @@ const Footer = ({ className: parentClassNames }: Props) => {
       >
         {/* FIRST COL */}
         <div className='flex flex-col w-full'>
-          <div className='flex justify-start text-white text-sm font-bold'>CONTACTS</div>
+          <div className='flex justify-start md:justify-center text-white text-sm font-bold'>CONTACTS</div>
         </div>
 
         {/* SECOND COL */}
         <div className='flex flex-col w-full'>
-          <div className='flex justify-start text-white text-sm font-bold'>
+          <div className='flex justify-start justify-center text-white text-sm font-bold'>
             BUILT WITH
           </div>
         </div>
@@ -33,16 +33,16 @@ const Footer = ({ className: parentClassNames }: Props) => {
 
       {/* SECOND ROW */}
       <div
-        className='flex max-w-2xl w-full items-center md:mx-4 pt-1'
+        className='flex max-w-2xl w-full items-center md:mx-4 pt-1 md:pt-2'
       >
         {/* FIRST COL */}
         <div className='flex flex-col w-full'>
-          <div className="flex justify-start">
+          <div className="flex justify-start md:justify-center">
             <a
               href='https://github.com/inhopj'
               target="_blank"
               rel="noopener"
-              className='github flex cursor-pointer transition-all duration-300 px-2 pl-0'
+              className='github flex cursor-pointer transition-all duration-300 mr-4'
             >
               <Github className='fill-white w-9 pb-0.5' />
             </a>
@@ -50,7 +50,7 @@ const Footer = ({ className: parentClassNames }: Props) => {
               href='https://linkedin.com/in/fcirone'
               target="_blank"
               rel="noopener"
-              className='linkedin flex cursor-pointer transition-all duration-300 px-2'
+              className='linkedin flex cursor-pointer transition-all duration-300'
             >
               <LinkedinLogo size={42} color="#ffffff" />
             </a>
@@ -59,9 +59,9 @@ const Footer = ({ className: parentClassNames }: Props) => {
 
         {/* SECOND COL */}
         <div className='flex flex-col w-full'>
-          <div className="flex justify-start">
+          <div className="flex justify-start justify-center">
             <a
-              className='flex px-2 pl-0'
+              className='flex mr-4'
               href='https://nextjs.org/'
               target='_blank'
             >
@@ -73,7 +73,7 @@ const Footer = ({ className: parentClassNames }: Props) => {
               />
             </a>
             <a
-              className='flex px-2'
+              className='flex mr-4'
               href='https://tailwindcss.com/'
               target='_blank'
             >
@@ -85,18 +85,18 @@ const Footer = ({ className: parentClassNames }: Props) => {
               />
             </a>
             <a
-              className='flex items-baseline px-2'
+              className='flex items-baseline mr-4'
               href='https://vercel.com/'
               target='_blank'
             >
               <Triangle size={27} color="#ffffff" weight="fill" />
             </a>
             <a
-              className='flex items-center px-2 md:pb-1'
+              className='flex items-center md:pb-1'
               href='https://phosphoricons.com/'
               target='_blank'
             >
-              <PhosphorLogo size={27} color="#ffffff" weight="fill" />
+              <PhosphorLogo size={27} color="#ffffff" weight="duotone" />
             </a>
           </div>
         </div>
