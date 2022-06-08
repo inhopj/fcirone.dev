@@ -27,7 +27,7 @@ const Anchor = ({
           isActive
             ? 'text-white'
             : 'text-zinc-400',
-          'rounded-lg cursor-pointer px-3 hover:text-yellow-200'
+          'rounded-lg cursor-pointer px-3'
         )}>
         {title}
       </a>
