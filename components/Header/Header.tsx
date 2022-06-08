@@ -9,12 +9,12 @@ interface Props {
 const Header = ({ className: parentClassNames }: Props) => {
 
   const homePath = '/'
-  const feedsPath = '/feeds'
+  const newsPath = '/news'
 
   return (
     <div
       className={classnames(
-        'flex justify-between text-lg',
+        'flex justify-between items-center text-lg',
         parentClassNames
       )}
     >
@@ -25,8 +25,8 @@ const Header = ({ className: parentClassNames }: Props) => {
           className='pl-0 md:pl-3'
         />
         <Anchor
-          path={feedsPath}
-          title="Feeds"
+          path={newsPath}
+          title="News"
         />
       </div>
       {/* TODO - create constants file with links */}
@@ -37,7 +37,6 @@ const Header = ({ className: parentClassNames }: Props) => {
         target="_blank"
         rel="noopener"
       >
-        {/* TODO - increase a bit dimensions */}
         <Github className='fill-white w-10' />
       </a>
     </div>

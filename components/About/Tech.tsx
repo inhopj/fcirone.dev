@@ -12,9 +12,8 @@ const Tech = ({ className: parentClassNames }: Props) => {
       </p>
       <p className="text-zinc-400">
         I love using Node and React to<br />
-        build up-to-date web things.<br />
-        Check out the Feeds page for a collection<br />
-        of interesting news and articles<br />
+        build web things.<br />
+        Check out the News page for contents<br />
         found here and there <span className='text-white font-bold'>=)</span>
       </p>
     </div>
