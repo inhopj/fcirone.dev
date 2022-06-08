@@ -3,10 +3,10 @@ import Head from 'next/head'
 import Header from '../components/Header/Header'
 import Hero from '../components/Hero'
 import About from '../components/About/About'
-import Credits from '../components/Credits/Credits'
-import Contacts from '../components/Contacts'
 import Footer from '../components/Footer'
 
+// TODO - cleanup unused stuff and icons inside /Icons
+// TODO - better folder structure for components
 const Home: NextPage = () => {
   return (
     <>
