@@ -15,7 +15,7 @@ const Hero = ({ className: parentClassNames }: Props) => {
     >
       <div className='flex flex-col justify-start p-0 md:p-3'>
         <h1 className="text-3xl md:text-5xl text-white">
-          Francesco Cirone
+          Francesco
         </h1>
         <h2 className='text-zinc-400'>
           Web Developer
