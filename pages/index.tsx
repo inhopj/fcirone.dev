@@ -2,8 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/Header/Header'
 import Hero from '../components/Hero'
-import About from '../components/About/About'
 import Footer from '../components/Footer'
+import Info from '../components/Info'
+import Contacts from '../components/Contacts'
 
 // TODO - cleanup unused stuff and icons inside /Icons
 // TODO - better folder structure for components
@@ -20,12 +21,13 @@ const Home: NextPage = () => {
       <div
         className='flex flex-col min-h-screen justify-between items-center p-4 md:p-8 bg-zinc-900'
       >
-        <div className='flex flex-col items-stretch max-w-2xl w-full mb-6'>
+        <div className='flex flex-col items-stretch max-w-2xl w-full mb-5'>
           <Header className='mb-9' />
           <Hero className='mb-9' />
-          <About className='' />
+          <Info className='mb-9'/>
+          <Contacts />
         </div>
-        <div className='flex flex-col items-stretch max-w-2xl w-full'>
+        <div className='flex flex-col items-stretch max-w-2xl w-full border-t border-zinc-400'>
           <Footer />
         </div>
       </div>
