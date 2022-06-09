@@ -3,6 +3,7 @@ import classnames from 'classnames'
 import Image from 'next/image'
 import { LinkedinLogo, PhosphorLogo, Triangle } from 'phosphor-react';
 import Github from './Icons/Github';
+import Tailwind from './Icons/Tailwind';
 
 interface Props {
   className?: string;
@@ -46,12 +47,7 @@ const Footer = ({ className: parentClassNames }: Props) => {
               href='https://tailwindcss.com/'
               target='_blank'
             >
-              <Image
-                src='/tailwind.svg'
-                alt="tailwind-logo-icon"
-                width={28}
-                height={28}
-              />
+              <Tailwind size={28} fill='white'/>
             </a>
             <a
               className='flex items-baseline mr-4 pt-1'
