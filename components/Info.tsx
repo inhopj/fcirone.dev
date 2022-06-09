@@ -26,7 +26,7 @@ const Info = ({ className: parentClassNames }: Props) => {
             <Nfc className='flex w-4 h-5' />
           </a>
         </div>
-        <div className='flex bg-zinc-800 rounded-lg p-3 text-white md:w-2/4'>
+        <div className='flex bg-zinc-800 rounded-lg p-3 text-white w-full md:w-2/4'>
           <div className='flex items-center mr-1'>Currently experimenting with NFC</div>
         </div>
       </div>
