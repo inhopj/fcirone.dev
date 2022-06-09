@@ -27,14 +27,19 @@
 }
 
 
-.at > svg > circle:nth-child(2) {
-  opacity: 0;
+.tailwind:hover > svg > path {
+  fill: #38bdf8;
+  transition-duration: 250ms;
 }
 
 
+.at > svg > circle:nth-child(2) {
+  fill: transparent
+}
+
 .at:hover > svg > circle:nth-child(2) {
-  opacity: 0.2;
-  transition-duration: 200ms;
+  fill: #989898;
+  transition-duration: 250ms;
 }
 
 .at > svg > circle:nth-child(3) {
