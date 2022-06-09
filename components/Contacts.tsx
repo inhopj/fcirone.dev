@@ -12,45 +12,41 @@ const Contacts = ({ className: parentClassNames }: Props) => {
   return (
     <div
       className={classnames(
-        'flex flex-col justify-start md:px-3',
+        'flex flex-col justify-start items-start md:px-3',
         parentClassNames
       )}
     >
 
       <div
-        className='flex justify-start text-white text-xl md:text-2xl md:mb-4 mb-3'
+        className='flex justify-start text-white text-sm font-bold md:text-xl mb-2'
       >
-        Contacts
+        CONTACTS
       </div>
 
 
-      <div
-        className='flex mb-2'
-      >
+      <div className="flex justify-start md:justify-center">
         <a
           href='https://github.com/inhopj'
           target="_blank"
           rel="noopener"
-          className='github inline-flex justify-start items-center cursor-pointer mr-3 hover:text-zinc-400 text-sm text-white transition-all duration-300'
+          className='github flex cursor-pointer transition-all duration-300 p-2 pl-0'
         >
-          <Github className='fill-white w-6 ml-0.5 mr-2' />
-          inhopj
+          <Github className='fill-white w-8 pb-0.5' />
         </a>
-      </div>
-      
-      
-      <div
-        className='flex mb-4'
-      > 
-        {/* avoid brutal usage of transition-all just to hover text */}
         <a
           href='https://linkedin.com/in/fcirone'
           target="_blank"
           rel="noopener"
-          className='linkedin inline-flex justify-start items-center cursor-pointer mr-2.5 hover:text-zinc-400 text-sm text-white transition-all duration-300'
+          className='linkedin flex cursor-pointer transition-all duration-250 p-1'
         >
-          <LinkedinLogo size={28} color="#ffffff" className='mr-2'/>
-          fcirone
+          <LinkedinLogo size={40} color="#ffffff" />
+        </a>
+        <a
+          href='mailto:fra.cirone@gmail.com'
+          rel="noopener"
+          className='at flex cursor-pointer p-1'
+        >
+          <At size={37} color="#ffffff" weight='duotone'/>
         </a>
       </div>
 
