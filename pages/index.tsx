@@ -23,8 +23,8 @@ const Home: NextPage = () => {
       >
         <div className='flex flex-col items-stretch max-w-2xl w-full mb-5'>
           <Header className='mb-9' />
-          <Hero className='mb-9' />
-          <Info className='mb-9'/>
+          <Hero className='mb-9 md:mb-14' />
+          <Info className='mb-9 md:mb-14'/>
           <Contacts />
         </div>
         <div className='flex flex-col items-stretch max-w-2xl w-full'>
