@@ -1,7 +1,8 @@
 /* better scope for linkedin css */
 .linkedin:hover > svg > rect:nth-child(2) {
   fill: #0b63bc;
-  stroke: #0b63bc;
+  stroke: #fff;
+  stroke-width: 12;
   transition-property: stroke, fill;
   transition-duration: 250ms;
 }
@@ -9,6 +10,7 @@
 .linkedin > svg > rect:nth-child(2) {
   fill: transparent;
   stroke: #fff;
+  stroke-width: 12;
   transition-property: stroke, fill;
   transition-duration: 250ms;
 }
@@ -16,10 +18,29 @@
 
 /* better scope for github css */
 .github:hover > svg {
-  fill: #0a63bc;
+  fill: #989898;
   transition-duration: 200ms;
 }
 
 .github > svg {
   transition-duration: 200ms;
+}
+
+
+.at > svg > circle:nth-child(2) {
+  opacity: 0;
+}
+
+
+.at:hover > svg > circle:nth-child(2) {
+  opacity: 0.2;
+  transition-duration: 200ms;
+}
+
+.at > svg > circle:nth-child(3) {
+  stroke-width: 12;
+}
+
+.at > svg > path:nth-child(4) {
+  stroke-width: 12;
 }
