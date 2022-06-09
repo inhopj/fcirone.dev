@@ -10,7 +10,7 @@ import Nodejs from './Icons/Nodejs';
 interface Props {
   className?: string;
 }
-
+const newsPath = '/news'
 const Info = ({ className: parentClassNames }: Props) => {
   return (
     <div className={classnames(
@@ -34,9 +34,7 @@ const Info = ({ className: parentClassNames }: Props) => {
       <div className='flex max-w-2xl w-full md:pl-3'>
         <div className='flex justify-center items-center bg-zinc-800 rounded-lg p-4 mr-2 border-2'>
           <Link href='/news'>
-            <a
-              href='/news'
-            >
+            <a>
               <RssSimple size={17} color="#ffffff" weight="bold" />
             </a>
           </Link>
