@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           <Info className='mb-9'/>
           <Contacts />
         </div>
-        <div className='flex flex-col items-stretch max-w-2xl w-full border-t border-zinc-400'>
+        <div className='flex flex-col items-stretch max-w-2xl w-full'>
           <Footer />
         </div>
       </div>
