@@ -11,7 +11,6 @@ interface Props {
 const Footer = ({ className: parentClassNames }: Props) => {
   return (
     <>
-      {/* FIRST ROW */}
       <div
         className={classnames(
           'flex max-w-2xl w-full pt-6',
