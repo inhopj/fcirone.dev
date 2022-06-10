@@ -18,13 +18,13 @@ const Contacts = ({ className: parentClassNames }: Props) => {
     >
 
       <div
-        className='flex justify-start text-white text-sm font-bold md:text-xl mb-2'
+        className='flex justify-start text-white text-sm font-semibold md:text-xl mb-2'
       >
-        CONTACTS
+        Let&apos;s connect!
       </div>
 
 
-      <div className="flex justify-start md:justify-center">
+      <div className="flex justify-start items-center">
         <a
           href='https://github.com/inhopj'
           target="_blank"
