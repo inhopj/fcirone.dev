@@ -5,6 +5,8 @@ import { PhosphorLogo } from 'phosphor-react';
 import Nextjs from './Icons/Nextjs';
 import Tailwind from './Icons/Tailwind';
 import Triangle from './Icons/Triangle';
+import Typescript from './Icons/Typescript';
+
 
 interface Props {
   className?: string;
@@ -30,6 +32,13 @@ const Footer = ({ className: parentClassNames }: Props) => {
         className='flex max-w-2xl w-full justify-center items-center pt-2 md:pt-2'
       >
         <div className="flex justify-start items-center">
+          <a
+            className='flex items-center mr-5'
+            href='https://www.typescriptlang.org/'
+            target='_blank'
+          >
+            <Typescript size={30} fill='transparent' />
+          </a>
           <a
             className='nextjs flex mr-4'
             href='https://nextjs.org/'
