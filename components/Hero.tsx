@@ -15,7 +15,8 @@ const Hero = ({ className: parentClassNames }: Props) => {
         parentClassNames
       )}
     >
-      <div className='flex mb-4 md:mb-0 '>
+      <div className='flex'>
+        {/* TODO - use a ReactNode here */}
         <Avatar size={80} />
       </div>
 
