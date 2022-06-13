@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       </Head>
       {/* CONTAINER */}
       <div
-        className='flex flex-col min-h-screen justify-between items-center p-4 md:p-8 bg-zinc-900'
+        className='flex flex-col min-h-screen justify-start items-center p-4 md:p-8 bg-zinc-900'
       >
         <div className='flex flex-col items-stretch max-w-2xl w-full mb-5'>
           <Header className='mb-9' />
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           <Info className='mb-9 md:mb-14'/>
           <Contacts />
         </div>
-        <div className='flex flex-col items-stretch max-w-2xl w-full'>
+        <div className='flex flex-col items-stretch max-w-2xl w-full fixed bottom-5 md:bottom-10'>
           <Footer />
         </div>
       </div>
