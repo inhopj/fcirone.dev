@@ -51,7 +51,7 @@ const Footer = ({ className: parentClassNames }: Props) => {
             href='https://tailwindcss.com/'
             target='_blank'
           >
-            <Tailwind size={28} fill='white' />
+            <Tailwind size={28} />
           </a>
           <a
             className='flex items-baseline mr-4'
