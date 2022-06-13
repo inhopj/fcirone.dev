@@ -46,7 +46,7 @@ const Contacts = ({ className: parentClassNames }: Props) => {
           rel="noopener"
           className='at flex cursor-pointer p-1'
         >
-          <At size={37} color="#ffffff" weight='duotone'/>
+          <At size={36} color="#ffffff" weight='duotone'/>
         </a>
       </div>
 
