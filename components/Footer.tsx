@@ -2,6 +2,7 @@
 import classnames from 'classnames'
 import Image from 'next/image'
 import { PhosphorLogo } from 'phosphor-react';
+import Nextjs from './Icons/Nextjs';
 import Tailwind from './Icons/Tailwind';
 import Triangle from './Icons/Triangle';
 
@@ -34,12 +35,7 @@ const Footer = ({ className: parentClassNames }: Props) => {
             href='https://nextjs.org/'
             target='_blank'
           >
-            <Image
-              src='/nextjs-icon.svg'
-              alt="next-logo-icon"
-              width={28}
-              height={28}
-            />
+            <Nextjs size={28} fill='white' />
           </a>
           <a
             className='tailwind flex mr-4'
