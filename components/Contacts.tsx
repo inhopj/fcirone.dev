@@ -39,7 +39,7 @@ const Contacts = ({ className: parentClassNames }: Props) => {
           rel="noopener"
           className='linkedin flex cursor-pointer transition-all duration-250 p-1'
         >
-          <LinkedinLogo size={40} color="#ffffff" />
+          <LinkedinLogo size={40} color="#ffffff" weight='light'/>
         </a>
         <a
           href='mailto:fra.cirone@gmail.com'
