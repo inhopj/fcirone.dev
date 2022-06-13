@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import classnames from 'classnames'
 import Cursor from './Icons/Cursor';
+import Avatar from './Icons/Avatar';
 
 interface Props {
   className?: string;
@@ -15,13 +16,7 @@ const Hero = ({ className: parentClassNames }: Props) => {
       )}
     >
       <div className='flex mb-4 md:mb-0 '>
-        {/* TODO - Create avatar component with embedded svg */}
-        <Image
-          src='/avatar.svg'
-          height={80}
-          width={80}
-          alt="profile avatar"
-        />
+        <Avatar size={80} />
       </div>
 
       <div className='flex flex-col justify-start md:m-0 ml-4 border-2 rounded-lg pl-3 pt-3 pb-2 bg-zinc-800 w-2/4'>
