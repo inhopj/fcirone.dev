@@ -44,9 +44,9 @@
 }
 
 
-.tailwind:hover > svg > path {
+.tailwind > svg > path {
   fill: #38bdf8;
-  transition-duration: 250ms;
+  /* transition-duration: 250ms; */
 }
 
 
