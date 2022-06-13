@@ -13,7 +13,7 @@ const FloatingGuy = ({
       className='flex flex-col-reverse items-center fixed bottom-5 right-2 md:bottom-10 md:right-10'
     >
       <div
-        className='flex justify-center items-center w-12 h-12 rounded-full bg-[#f0db4f] text-lg font-semibold mt-3'
+        className='flex justify-center items-center w-12 h-12 rounded-full bg-[#f0db4f] text-lg font-semibold mt-3 cursor-pointer'
         onClick={() => setToggle(!toggle)}
       >
         #
