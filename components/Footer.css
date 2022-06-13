@@ -2,7 +2,6 @@
 .linkedin:hover > svg > rect:nth-child(2) {
   fill: transparent;
   stroke: #989898;
-  /* stroke-width: 12; */
   transition-property: stroke, fill;
   transition-duration: 250ms;
 }
@@ -27,7 +26,6 @@
 
 .linkedin > svg > rect:nth-child(2) {
   fill: transparent;
-  /* stroke-width: 12; */
   transition-property: stroke, fill;
   transition-duration: 250ms;
 }
