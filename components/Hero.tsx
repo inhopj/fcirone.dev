@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import classnames from 'classnames'
 import Cursor from './Icons/Cursor';
 import Avatar from './Icons/Avatar';
