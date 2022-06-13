@@ -2,7 +2,7 @@
 .linkedin:hover > svg > rect:nth-child(2) {
   fill: transparent;
   stroke: #989898;
-  stroke-width: 12;
+  /* stroke-width: 12; */
   transition-property: stroke, fill;
   transition-duration: 250ms;
 }
@@ -27,7 +27,7 @@
 
 .linkedin > svg > rect:nth-child(2) {
   fill: transparent;
-  stroke-width: 12;
+  /* stroke-width: 12; */
   transition-property: stroke, fill;
   transition-duration: 250ms;
 }
@@ -41,12 +41,6 @@
 
 .github > svg {
   transition-duration: 250ms;
-}
-
-
-.tailwind > svg > path {
-  fill: #38bdf8;
-  /* transition-duration: 250ms; */
 }
 
 
