@@ -33,7 +33,7 @@ const Info = ({ className: parentClassNames }: Props) => {
 
       <div className='flex max-w-2xl w-full md:pl-3'>
         <div className='flex justify-center items-center bg-zinc-800 rounded-lg p-4 mr-2 border-2'>
-          <Link href='/news'>
+          <Link href={newsPath}>
             <a>
               <RssSimple size={17} color="#ffffff" weight="bold" />
             </a>
