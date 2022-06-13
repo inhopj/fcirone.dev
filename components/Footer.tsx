@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import classnames from 'classnames'
 import Image from 'next/image'
-import { LinkedinLogo, PhosphorLogo } from 'phosphor-react';
-import Github from './Icons/Github';
+import { PhosphorLogo } from 'phosphor-react';
 import Tailwind from './Icons/Tailwind';
 import Triangle from './Icons/Triangle';
 
