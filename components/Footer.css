@@ -1,15 +1,32 @@
 /* better scope for linkedin css */
 .linkedin:hover > svg > rect:nth-child(2) {
-  fill: #0b63bc;
-  stroke: #fff;
+  fill: transparent;
+  stroke: #989898;
   stroke-width: 12;
   transition-property: stroke, fill;
   transition-duration: 250ms;
 }
 
+.linkedin:hover > svg > line:nth-child(4) {
+  stroke: #989898;
+  transition-duration: 250ms;
+}
+.linkedin:hover > svg > line:nth-child(3) {
+  stroke: #989898;
+  transition-duration: 250ms;
+}
+
+.linkedin:hover > svg > path {
+  stroke: #989898;
+  transition-duration: 250ms;
+}
+.linkedin:hover > svg > circle {
+  fill: #989898;
+  transition-duration: 250ms;
+}
+
 .linkedin > svg > rect:nth-child(2) {
   fill: transparent;
-  stroke: #fff;
   stroke-width: 12;
   transition-property: stroke, fill;
   transition-duration: 250ms;
@@ -19,11 +36,11 @@
 /* better scope for github css */
 .github:hover > svg {
   fill: #989898;
-  transition-duration: 200ms;
+  transition-duration: 250ms;
 }
 
 .github > svg {
-  transition-duration: 200ms;
+  transition-duration: 250ms;
 }
 
 
@@ -33,19 +50,24 @@
 }
 
 
+
 .at > svg > circle:nth-child(2) {
   fill: transparent
 }
-
-.at:hover > svg > circle:nth-child(2) {
-  fill: #989898;
-  transition-duration: 250ms;
-}
-
 .at > svg > circle:nth-child(3) {
   stroke-width: 12;
+}
+.at:hover > svg > circle:nth-child(3) {
+  stroke-width: 12;
+  stroke: #989898;
+  transition-duration: 250ms;
 }
 
 .at > svg > path:nth-child(4) {
   stroke-width: 12;
+}
+.at:hover > svg > path:nth-child(4) {
+  stroke: #989898;
+  stroke-width: 12;
+  transition-duration: 250ms;
 }
