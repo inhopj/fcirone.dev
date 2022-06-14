@@ -8,6 +8,7 @@ interface Props {
 
 const Header = ({ className: parentClassNames }: Props) => {
 
+  // TODO - create constants file
   const homePath = '/'
   const newsPath = '/news'
 
@@ -31,6 +32,7 @@ const Header = ({ className: parentClassNames }: Props) => {
         />
       </div>
       {/* TODO - create constants file with links */}
+      {/* TODO - add github class to have consistent hovering style as Github in Contacts comp */}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
       <a
         className='flex cursor-pointer'
