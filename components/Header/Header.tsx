@@ -19,6 +19,7 @@ const Header = ({ className: parentClassNames }: Props) => {
       )}
     >
       <div className="flex justify-start">
+        {/* TODO - use ReactNode for the two anchor slots */}
         <Anchor
           path={homePath}
           title="Home"
