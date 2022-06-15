@@ -14,6 +14,7 @@ const Home: NextPage = () => {
       <Head>
         <title>fcirone - Home</title>
         <meta name="description" content="My personal web page" charSet="UTF-8" />
+        {/* TODO - change icon as avatar.svg is now embedded in a component */}
         <link rel="icon" href="/avatar.svg" />
       </Head>
       {/* CONTAINER */}
