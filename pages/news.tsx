@@ -16,6 +16,7 @@ const Feeds: NextPage = () => {
 
   const { javascript, node, react } = feeds
   
+  // TODO - use Phosphor icon
   const anchors: Anchor[] = [
     {
       href: '#rss',
