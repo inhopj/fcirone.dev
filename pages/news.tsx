@@ -35,7 +35,7 @@ const Feeds: NextPage = () => {
   return (
     <>
       <Head>
-        <title>fcirone - Feeds</title>
+        <title>fcirone - News</title>
         <meta name="description" content="Feeds page" charSet="UTF-8" />
         <link rel="icon" href="/rss-feed.svg" />
       </Head>

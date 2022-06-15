@@ -12,8 +12,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        {/* TODO - uniform page titles */}
-        <title>Personal Web Page</title>
+        <title>fcirone - Home</title>
         <meta name="description" content="My personal web page" charSet="UTF-8" />
         <link rel="icon" href="/avatar.svg" />
       </Head>
