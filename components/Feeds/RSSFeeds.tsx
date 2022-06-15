@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+// TODO - make it look more like a button
 const RSSFeeds = () => {
   return (
     <a
@@ -12,6 +13,7 @@ const RSSFeeds = () => {
       >
         rss
       </div>
+      {/* TODO use Phosphor ion here as well */}
       {/* TODO - create component */}
       {/* TODO - consider adding some effect (e.g. hover) */}
       <Image
