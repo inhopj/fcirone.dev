@@ -18,27 +18,26 @@ const Info = ({ className: parentClassNames }: Props) => {
       parentClassNames
     )}>
       <div className='flex max-w-2xl w-full md:pl-3 mb-3'>
-        <div className='flex justify-center items-center bg-zinc-800 rounded-lg p-4 text-white mr-2 border-2'>
-          <a
-            href='https://w3c.github.io/web-nfc/'
-            target='_blank'
-          >
-            <Nfc className='flex w-4 h-5' />
-          </a>
-        </div>
+        <a
+          href='https://w3c.github.io/web-nfc/'
+          target='_blank'
+          className='flex justify-center items-center bg-zinc-800 rounded-lg p-4 text-white mr-2 border-2'
+        >
+          <Nfc className='flex w-4 h-5' />
+        </a>
         <div className='flex bg-zinc-800 rounded-lg p-3 text-white w-full md:w-2/4'>
           <div className='flex items-center mr-1'>Currently experimenting with NFC</div>
         </div>
       </div>
 
       <div className='flex max-w-2xl w-full md:pl-3'>
-        <div className='flex justify-center items-center bg-zinc-800 rounded-lg p-4 mr-2 border-2'>
-          <Link href={newsPath}>
-            <a>
-              <RssSimple size={17} color="#ffffff" weight="bold" />
-            </a>
-          </Link>
-        </div>
+        <Link href={newsPath}>
+          <a
+            className='flex justify-center items-center bg-zinc-800 rounded-lg p-4 mr-2 border-2'
+          >
+            <RssSimple size={17} color="#ffffff" weight="bold" />
+          </a>
+        </Link>
         <div className='flex bg-zinc-800 rounded-lg p-3 text-white w-full md:w-2/4'>
 
           <p className='flex items-center'>
