@@ -32,10 +32,9 @@ const Header = ({ className: parentClassNames }: Props) => {
         />
       </div>
       {/* TODO - create constants file with links */}
-      {/* TODO - add github class to have consistent hovering style as Github in Contacts comp */}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
       <a
-        className='flex cursor-pointer'
+        className='github flex cursor-pointer transition-all duration-300'
         href='https://github.com/inhopj/fcirone.dev'
         target="_blank"
         rel="noopener"
