@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import { Card } from '../../interfaces/interfaces';
+import { Card } from '../interfaces/interfaces';
 
 const Card = ({
   className: parentClassNames,
