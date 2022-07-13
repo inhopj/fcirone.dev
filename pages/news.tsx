@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import feeds from '../public/feeds.json'
-import Header from '../components/Header/Header'
+import Header from '../components/Header'
 import Section from '../components/Section'
 import RSSFeeds from '../components/RSSFeeds'
 import Javascript from '../components/Icons/Javascript'

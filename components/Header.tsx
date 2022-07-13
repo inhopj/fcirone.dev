@@ -1,6 +1,6 @@
 import classnames from 'classnames'
-import Anchor from '../Link/Anchor'
-import Github from '../Icons/Github'
+import Anchor from './Anchor'
+import Github from './Icons/Github'
 
 interface Props {
   className?: string;
